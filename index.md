@@ -5,21 +5,19 @@ layout: home
 hero:
   name: "eSpa"
   text: "An open source community for spa home automation"
-  tagline: My great project tagline
+  tagline: Jump in today!
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Get Started
+      link: /getting-started
+    # - theme: alt
+    #   text: API Examples
+    #   link: /api-examples
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Open Source Software
+    details: Custom firmware for your eSpa hardware to make the most of your spa.
+  - title: Cheap hardware
+    details: Learn how to build your own eSpa hardware, or purchase pre-assembled.
 ---
 
