@@ -7,7 +7,7 @@ hero:
   text: "An open source community for spa home automation"
   tagline: Jump in today!
   image:
-    src: /images/espa-mini-top.jpg
+    src: /images/logo-transparent.webp
     alt: Banner
   actions:
     - theme: brand
