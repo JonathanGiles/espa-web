@@ -16,11 +16,18 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: 'Overview',
+        text: 'Contents',
         items: [
           { text: 'Getting Started', link: '/getting-started' },
+          { text: 'Compatibility', link: '/compatibility' },
           { text: 'Firmware', link: '/firmware' },
-          { text: 'Hardware', link: '/hardware' },
+          { text: 'Hardware', 
+            items: [
+              { text: 'Overview', link: '/hardware' },
+              { text: 'Building Your Own Hardware', link: '/hardware-custom-build' },
+              { text: 'Buying a Pre-Built PCB', link: '/hardware-pcb' }
+            ]
+          },
           { text: 'Troubleshooting', link: '/troubleshooting' }
         ]
       }

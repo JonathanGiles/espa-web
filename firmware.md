@@ -2,6 +2,10 @@
 
 The eSpa firmware is available for download from the [eSpa GitHub repository](https://github.com/wayne-love/ESPySpa). It is a [Platform.io project](https://platformio.org/), which makes it really easy to build and upload to your [hardware](/hardware). This page covers building, flashing, and configuring the firmware.
 
+::: warning
+This project will not work on all spa pools. Refer to the [compatibility](/compatibility) page to understand if your spa pool is compatible with this project.
+:::
+
 ## Features
 
 The eSpa firmware is designed to be easy to use, and to provide a lot of features to integrate your spa pool into your home automation. Some of the features include:
