@@ -8,7 +8,10 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Getting Started', link: '/getting-started' }
+      { text: 'Getting Started', link: '/getting-started' },
+      { text: 'Firmware', link: '/firmware' },
+      { text: 'Hardware', link: '/hardware' },
+      { text: 'Troubleshooting', link: '/troubleshooting' }
     ],
 
     sidebar: [
@@ -18,6 +21,7 @@ export default defineConfig({
           { text: 'Getting Started', link: '/getting-started' },
           { text: 'Firmware', link: '/firmware' },
           { text: 'Hardware', link: '/hardware' },
+          { text: 'Troubleshooting', link: '/troubleshooting' }
         ]
       }
     ],
