@@ -51,13 +51,13 @@ To keep things as simple as possible, off the shelf modules have been used. You 
 The resistors on the RX/TX pins are recommended but optional.
 :::
 
-[![Circuit diagram](images/circuit.png){width=50%}](images/circuit.png)
-[![Individual components](images/disassembled.png){width=50%}](images/disassembled.png)
-[![Board wiring on back](images/wiring.png){width=50%}](images/wiring.png)
-[![The final assembled board](images/board.png){width=50%}](images/board.png)
+[![Circuit diagram](/images/circuit.png){width=50%}](/images/circuit.png)
+[![Individual components](/images/disassembled.png){width=50%}](/images/disassembled.png)
+[![Board wiring on back](/images/wiring.png){width=50%}](/images/wiring.png)
+[![The final assembled board](/images/board.png){width=50%}](/images/board.png)
 
 ## Buying a Pre-Built PCB
 
 If building your own hardware is not your thing, you can [purchase a pre-built eSpa PCB online](https://store.jonathangiles.net). This PCB is designed to be a drop-in solution for people wanting to add their spa pool to their home automation systems, and comes with all the required components already soldered in place.
 
-[![eSpa board](images/espa-mini-top.jpg){width=50%}](images/espa-mini-top.jpg)
+[![eSpa board](/images/espa-mini-top.jpg){width=50%}](/images/espa-mini-top.jpg)
