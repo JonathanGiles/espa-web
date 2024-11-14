@@ -21,15 +21,21 @@ hero:
     #   link: /hardware
 
 features:
-  - title: Open Source Software
+  - icon: 
+      src: /images/open-source-software.png
+    title: Open Source Software
     details: Custom firmware for your eSpa hardware to make the most of your spa.
     link: /firmware
     linkText: Learn more
-  - title: Cheap Hardware
+  - icon: 
+      src: /images/open-source-hardware.png
+    title: Cheap Hardware
     details: Learn how to build your own eSpa hardware, or purchase pre-assembled.
     link: /hardware
     linkText: See how easy it is
-  - title: Great Community
+  - icon:
+      src: /images/discord.png
+    title: Great Community
     details: Join the eSpa community on Discord to ask questions, get help, and share your projects.
     link: https://discord.gg/faK8Ag4wHn
     linkText: Join Discord

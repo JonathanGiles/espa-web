@@ -1,6 +1,5 @@
 import { defineConfig } from 'vitepress'
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "eSpa",
   description: "An open source community for spa home automation",
@@ -31,8 +30,8 @@ export default defineConfig({
           { text: 'Hardware', 
             items: [
               { text: 'Overview', link: '/hardware' },
-              { text: 'Building Your Own Hardware', link: '/hardware-custom-build' },
-              { text: 'Buying a Pre-Built PCB', link: '/hardware-pcb' }
+              { text: 'Building Your Own', link: '/hardware-custom-build' },
+              { text: 'Pre-Built PCBs', link: '/hardware-pcb' }
             ]
           },
           { text: 'Troubleshooting', link: '/troubleshooting' }
