@@ -20,7 +20,13 @@ export default defineConfig({
         items: [
           { text: 'Getting Started', link: '/getting-started' },
           { text: 'Compatibility', link: '/compatibility' },
-          { text: 'Firmware', link: '/firmware' },
+          { text: 'Firmware',
+            items: [
+              { text: 'Overview', link: '/firmware' },
+              { text: 'Configuration', link: '/firmware-configuration' },
+              { text: 'Building', link: '/firmware-building' }
+            ]
+          },
           { text: 'Hardware', 
             items: [
               { text: 'Overview', link: '/hardware' },

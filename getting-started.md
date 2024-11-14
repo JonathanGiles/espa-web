@@ -6,11 +6,9 @@ eSpa is an open source community for spa home automation, built around [firmware
 
 eSpa is a project to build a simple, open source, and affordable spa pool controller, and consists of both [source code](/firmware) and [hardware](/hardware). The project is built around the ESP32 microcontroller, and is designed to be easy to build and use. The project is open source, and is designed to be easy to modify and extend.
 
-eSpa works by connecting directly to the controller board of your spa pool, using a standard RJ-45 network cable for both power and communication. There is no complex wiring necessary – it’s as simple as connecting both ends of an RJ-45 network cable into the right ports.
+eSpa works by connecting directly to the controller board of your spa pool, using a standard RJ-45 network cable for both power and communication. There is no complex wiring necessary – it’s as simple as connecting both ends of an RJ-45 network cable into the right ports. You can mount the eSpa hardware inside spa pool cabinet, kept safe in a separate waterproof enclosure.
 
-To protect the eSpa it is a good idea to put it inside a suitable enclosure. You can screw the enclosure to the inside of your spa pool, to keep it safe from the elements.
-
-When the eSpa is connected to your spa pool, it will power up, and be able to be configured and connected to. The firmware is built as open source software, and is [available on GitHub](https://github.com/wayne-love/ESPySpa).
+When the eSpa is connected to your spa pool, it will power up, and be able to be configured and connected to (follow the setup instructions here). The firmware is built as open source software, and is [available on GitHub](https://github.com/wayne-love/ESPySpa).
 
 ## Discord
 
