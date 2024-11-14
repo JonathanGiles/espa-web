@@ -10,9 +10,12 @@ hero:
     - theme: brand
       text: Get Started
       link: /getting-started
-    # - theme: alt
-    #   text: API Examples
-    #   link: /api-examples
+    - theme: alt
+      text: Firmware
+      link: /firmware
+    - theme: alt
+      text: Hardware
+      link: /hardware
 
 features:
   - title: Open Source Software

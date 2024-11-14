@@ -23,7 +23,8 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/wayne-love/espyspa' }
+      { icon: 'github', link: 'https://github.com/wayne-love/espyspa' },
+      { icon: 'discord', link: 'https://discord.gg/faK8Ag4wHn' }
     ]
   }
 })
