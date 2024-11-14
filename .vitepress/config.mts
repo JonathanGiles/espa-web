@@ -6,6 +6,7 @@ export default defineConfig({
   description: "An open source community for spa home automation",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    // logo: '/images/logo-transparent.webp',
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Getting Started', link: '/getting-started' },
@@ -42,6 +43,10 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/wayne-love/espyspa' },
       { icon: 'discord', link: 'https://discord.gg/faK8Ag4wHn' }
-    ]
+    ],
+
+    search: {
+      provider: 'local'
+    }
   }
 })
