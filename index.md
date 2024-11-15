@@ -34,7 +34,7 @@ features:
     link: /hardware
     linkText: See how easy it is
   - icon:
-      src: /images/discord.png
+      src: /images/discord_round.png
     title: Great Community
     details: Join the eSpa community on Discord to ask questions, get help, and share your projects.
     link: https://discord.gg/faK8Ag4wHn
