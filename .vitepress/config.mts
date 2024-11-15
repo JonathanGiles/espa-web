@@ -10,8 +10,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Getting Started', link: '/getting-started' },
       { text: 'Firmware', link: '/firmware' },
-      { text: 'Hardware', link: '/hardware' },
-      { text: 'Troubleshooting', link: '/troubleshooting' }
+      { text: 'Hardware', link: '/hardware' }
     ],
 
     sidebar: [
