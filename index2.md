@@ -7,9 +7,9 @@ hero:
   text: "An open source community for spa home automation"
   tagline: Jump in today!
   image:
-    src: /images/logo_eSpa_02_320px.png
-    # light: /images/logo-black.png
-    # dark: /images/logo-white.png
+    # src: /images/logo_eSpa_02_320px.png
+    light: /images/logo-black.png
+    dark: /images/logo-white.png
   actions:
     - theme: brand
       text: Get Started
