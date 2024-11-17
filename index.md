@@ -14,9 +14,9 @@ hero:
     - theme: brand
       text: Get Started
       link: /getting-started
-    # - theme: alt
-    #   text: Firmware
-    #   link: /firmware
+    - theme: alt
+      text: Buy an eSpa
+      link: https://store.espa.diy
     # - theme: alt
     #   text: Hardware
     #   link: /hardware

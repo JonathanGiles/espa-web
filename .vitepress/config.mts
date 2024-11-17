@@ -25,7 +25,7 @@ export default defineConfig({
         text: 'Contents',
         items: [
           { text: 'Getting Started', link: '/getting-started' },
-          { text: 'Compatibility', link: '/compatibility' },
+          
           { text: 'Firmware',
             items: [
               { text: 'Overview', link: '/firmware' },
@@ -40,6 +40,7 @@ export default defineConfig({
               { text: 'Pre-Built PCBs', link: '/hardware-pcb' }
             ]
           },
+          { text: 'Compatibility', link: '/compatibility' },
           { text: 'Troubleshooting', link: '/troubleshooting' }
         ]
       }

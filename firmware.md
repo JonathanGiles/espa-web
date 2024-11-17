@@ -1,11 +1,5 @@
 # Firmware
 
-::: warning
-This project will not work on all spa pools. Refer to the [compatibility](/compatibility) page to understand if your spa pool is compatible with this project.
-:::
-
-## Features
-
 The eSpa firmware is designed to be easy to use, and to provide a lot of features to integrate your spa pool into your home automation. Some of the features include:
 
 - **Temperature control**: The firmware can control the spa pool temperature, and can turn the heater on and off to maintain the temperature setpoint.

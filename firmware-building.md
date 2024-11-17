@@ -1,6 +1,6 @@
 # Firmware
 
-The eSpa firmware is available for download from the [eSpa GitHub repository](https://github.com/wayne-love/ESPySpa). It is a [Platform.io project](https://platformio.org/), which makes it really easy to build and upload to your [hardware](/hardware). This page covers building, flashing, and configuring the firmware.
+The eSpa firmware is available for download from the [eSpa GitHub repository](https://github.com/wayne-love/ESPySpa). It is a [Platform.io project](https://platformio.org/), which makes it really easy to build and upload to your [hardware](/hardware).
 
 ## Building and flashing the firmware
 

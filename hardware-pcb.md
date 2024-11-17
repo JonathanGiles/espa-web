@@ -1,11 +1,11 @@
 # Buying a Pre-Built PCB
 
-If building your own hardware is not your thing, you can [purchase a pre-built eSpa PCB online](https://store.jonathangiles.net). This PCB is designed to be a drop-in solution for people wanting to add their spa pool to their home automation systems, and comes with all the required components already soldered in place. It is professionally manufactured and has been tested by many people in the eSpa community.
+If building your own hardware is not your thing, you can [purchase a pre-built eSpa PCB online](https://store.espa.diy). This PCB is designed to be a drop-in solution for people wanting to add their spa pool to their home automation systems, and comes with all the required components already soldered in place. It is professionally manufactured and has been tested by many people in the eSpa community.
 
-[![eSpa board](/images/espa-mini-top.jpg){width=50%}](https://store.jonathangiles.net)
+[![eSpa board](/images/espa-mini-top.jpg){width=50%}](https://store.espa.diy)
 
 ::: tip
-You can buy the eSpa custom PCBs from an [online store](https://store.jonathangiles.net).
+You can buy the eSpa custom PCBs from an [online store](https://store.espa.diy).
 :::
 
 There are two board designs available: the [eSpa Mini](https://store.jonathangiles.net/product/espa-mini/), and the [eSpa Max](https://store.jonathangiles.net/product/espa-max/). They both run the same eSpa [firmware](/firmware), but the eSpa Max has more features and is designed for people who want to add more sensors or loop back from the eSpa to another spa pool component (such as the status LED available on some spa pools).

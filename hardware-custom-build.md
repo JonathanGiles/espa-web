@@ -5,8 +5,25 @@ This project will not work on all spa pools. Refer to the [compatibility](/compa
 :::
 
 ::: danger 
-It is really important to note that shorting pins 7 and 8 on the `EXP1` port will cause the spa controller to short, and cause irreparable damage to the controller. This is why it is important to build your own hardware with care, and to test it thoroughly before connecting it to your spa pool. We've already heard of at least two people who have had to replace their spa controllers due to this mistake.
+It is really important to note that shorting pins 7 and 8 on the `EXP1` port will cause the spa controller to short, and cause irreparable damage to the controller. This is why it is important to build your own hardware with care, and to test it thoroughly before connecting it to your spa pool. We've already heard of at least two people who have had to replace their spa controllers due to this mistake. If you want to reduce the risk of damage, consider [purchasing a pre-built PCB](/hardware-pcb) instead.
 :::
+
+## Spa Pool Connection Overview
+
+On spa pools containing SpaNet SV and SV Mini controllers, there exists a port labeled `EXP1` or `EXPAND1` port. This is a standard RJ-45 plug, with the following output coming from the controller on each of the pins:
+
+| Pin | Controller | WiFly Adapter       |
+|-----|------------|---------------------|
+| 1   | Health Led | Pass through        |
+| 2   | GND        | Pass through        |
+| 3   | Not used   |                     |
+| 4   | Not used   |                     |
+| 5   | TX         | RX                  |
+| 6   | RX         | TX                  |
+| 7   | GND        | GND                 |
+| 8   | 12V        | 12V                 |
+
+Because the spa is outputting 12V over this connection, we can build our controller with no need for an external power connection - all we need to do is convert the 12V down to a 3.3V voltage suitable for our ESP32 chip. We then use pins 5/6 to communicate with the controller, using our [custom firmware](/firmware).
 
 ## Components
 
