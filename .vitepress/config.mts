@@ -29,8 +29,8 @@ export default defineConfig({
           { text: 'Firmware',
             items: [
               { text: 'Overview', link: '/firmware' },
-              { text: 'Configuration', link: '/firmware-configuration' },
-              { text: 'Building', link: '/firmware-building' }
+              { text: 'Building', link: '/firmware-building' },
+              { text: 'Configuration', link: '/firmware-configuration' }
             ]
           },
           { text: 'Hardware', 
