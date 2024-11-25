@@ -30,7 +30,8 @@ export default defineConfig({
             items: [
               { text: 'Overview', link: '/firmware' },
               { text: 'Building', link: '/firmware-building' },
-              { text: 'Configuration', link: '/firmware-configuration' }
+              { text: 'Configuration', link: '/firmware-configuration' },
+              { text: 'Updating', link: '/firmware-updating' }
             ]
           },
           { text: 'Hardware', 
