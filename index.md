@@ -12,8 +12,8 @@ hero:
     # dark: /images/logo-white.png
   actions:
     - theme: brand
-      text: Get Started
-      link: /getting-started
+      text: Introduction
+      link: /introduction
     - theme: alt
       text: Buy an eSpa
       link: https://store.espa.diy
