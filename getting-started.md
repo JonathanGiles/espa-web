@@ -1,19 +1,33 @@
 # Getting Started
 
-eSpa is an open source community for spa home automation, built around [firmware](firmware.html) and a simple [hardware design](hardware.html) that you can build yourself, or [purchase pre-assembled](https://store.espa.diy).
+This page is for people who have their eSpa hardware (either DIY or a pre-built PCB) and are looking to get started with it. If you are looking to get some hardware, please refer to the [hardware page](/hardware) to get started on that.
 
-## What is eSpa?
+## Connecting to your spa pool controller
 
-eSpa is a project to build a simple, open source, and affordable spa pool controller, and consists of both [source code](/firmware) and [hardware](/hardware). The project is built around the ESP32 microcontroller, and is designed to be easy to build and use. The project is open source, and is designed to be easy to modify and extend.
+Your eSpa connects directly to the SpaNet controller in your spa pool. It will have a RJ-45 port labelled `EXP1`, which is where you will connect your eSpa. The eSpa will be powered by the SpaNet controller, so you do not need to provide any additional power. The USB-C port on the eSpa is programming and debugging purposes only - it isn't used in normal operation.
 
-eSpa works by connecting directly to the controller board of your spa pool, using a standard RJ-45 network cable for both power and communication. There is no complex wiring necessary – it’s as simple as connecting both ends of an RJ-45 network cable into the right ports. You can mount the eSpa hardware inside spa pool cabinet, kept safe in a separate waterproof enclosure.
+## Accessing your eSpa
 
-When the eSpa is connected to your spa pool, it will power up, and be able to be configured and connected to (follow the setup instructions here). The firmware is built as open source software, and is [available on GitHub](https://github.com/wayne-love/ESPySpa).
+Once your device is plugged into the spa pool controller it will start in access point mode. You will know that you are in access point mode by referring to the [troubleshooting page status lights description](/troubleshooting) - it is typically shown by the LEDs being on. Access point mode allows for you to configure the eSpa to connect to your home network.
 
-## Discord
+To do this, follow these steps:
 
-Join the eSpa community on [Discord](https://discord.gg/faK8Ag4wHn)! This is the best place to ask questions, get help, and share your projects.
+1. Bring your mobile phone, tablet, or computer nearby to your spa pool.
+2. Scan for Wifi access points, and you should find a new access point named `eSpa-wifi-AP`.
+3. Connect to this access point from your mobile phone, tablet, or computer.
+4. Your phone / computer should connect to the captive portal on the ESP32. If you do not see the captive portal, try browsing to [http://192.168.4.1](http://192.168.4.1) in your browser, as this is the default IP address of eSpa devices when in access point mode.
+5. Configure and save the details of your home network in the captive portal (more details below).
+6. eSpa will restart and connect to your home network (and the Wifi access point will no longer be accessible (unless you follow the [troubleshooting](/troubleshooting) guide)).
+7. Access your eSpa by browsing to the IP address that it has been assigned by your home network. This will allow you to configure the spa pool settings, such as the temperature setpoint, and many other settings.
 
-## GitHub
+## Configuring WiFi and MQTT settings
 
-The eSpa firmware is available for download from the [eSpa GitHub repository](https://github.com/wayne-love/ESPySpa).
+When you connect to the captive portal, you will be presented with a form to configure the WiFi and MQTT settings. You should enter the name and password for your home network in the first section.
+
+### MQTT Settings
+
+eSpa works by sending and receiving messages over MQTT. MQTT is a lightweight messaging protocol that is designed for devices with limited resources. You will need to configure the MQTT settings to connect to your MQTT broker. Most commonly, people will install [Mosquitto](https://mosquitto.org/) on their home server.
+
+#### MQTT for Home Assistant Users
+
+For users of Home Assistant, you can follow the [Home Assistant Add-on: Mosquitto Broker](https://github.com/home-assistant/addons/blob/master/mosquitto/DOCS.md) guide to set up a MQTT broker. Once you set this up (with a username and password), you can pass this to the eSpa to use for publishing status updates for your spa pool.

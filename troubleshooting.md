@@ -16,11 +16,11 @@ The first thing you need to do whenever you run into a problem is ensure you are
 
 On [DIY hardware](/hardware-custom-build), it is recommended that a single LED be included to indicate the status of the eSpa. With a single LED, there are different blink intervals used to indicate various error states. The following table shows the meaning of the different blink intervals:
 
-| Blink Interval      | State Code | Description                                                          |
-|---------------------|------------|----------------------------------------------------------------------|
-| 250ms               | 1          | Failed to connect to Wifi - check settings are correct.              |
-| 1000ms              | 4          | Failed to connect to MQTT server - check settings are correct.       |
-| Solid On (no blink) | 15         | eSpa Wifi access point started and waiting for you to connect to it. |
+| Blink Interval       | Description                                                          |
+|----------------------|----------------------------------------------------------------------|
+| 250ms                | Failed to connect to Wifi - check settings are correct.              |
+| 1000ms               | Failed to connect to MQTT server - check settings are correct.       |
+| Solid On (no blink)  | eSpa Wifi access point started and waiting for you to connect to it. |
 
 ### eSpa Mini and eSpa Max PCBs
 
@@ -28,24 +28,24 @@ On [DIY hardware](/hardware-custom-build), it is recommended that a single LED b
 
 On the [eSpa Mini and eSpa Max PCBs](/hardware-pcb), there are four LEDs that are used for status indication. The LEDs are labelled 1, 2, 3, and 4. When everything is working fine, the four LEDs will light up in an animation going backwards and forwards. When one or more of the lights is lit up, it indicates an error condition, and you can refer to the table below to identify the issue:
 
-| LED 1            | LED 2            | LED 3            | LED 4            | State Code | Description                                                          |
-|:----------------:|:----------------:|:----------------:|:----------------:|:----------:|----------------------------------------------------------------------|
-| :white_circle:   | :white_circle:   | :white_circle:   | :white_circle:   | 0          | *(Not used)*                                                         |
-| :white_circle:   | :white_circle:   | :white_circle:   | :red_circle:     | 1          | Failed to connect to Wifi - check settings are correct.              |
-| :white_circle:   | :white_circle:   | :red_circle:     | :white_circle:   | 2          | *(Not used)*                                                         |
-| :white_circle:   | :white_circle:   | :red_circle:     | :red_circle:     | 3          | *(Not used)*                                                         |
-| :white_circle:   | :red_circle:     | :white_circle:   | :white_circle:   | 4          | Failed to connect to MQTT server - check settings are correct.       |
-| :white_circle:   | :red_circle:     | :white_circle:   | :red_circle:     | 5          | *(Not used)*                                                         |
-| :white_circle:   | :red_circle:     | :red_circle:     | :white_circle:   | 6          | *(Not used)*                                                         |
-| :white_circle:   | :red_circle:     | :red_circle:     | :red_circle:     | 7          | *(Not used)*                                                         |
-| :red_circle:     | :white_circle:   | :white_circle:   | :white_circle:   | 8          | *(Not used)*                                                         |
-| :red_circle:     | :white_circle:   | :white_circle:   | :red_circle:     | 9          | *(Not used)*                                                         |
-| :red_circle:     | :white_circle:   | :red_circle:     | :white_circle:   | 10         | *(Not used)*                                                         |
-| :red_circle:     | :white_circle:   | :red_circle:     | :red_circle:     | 11         | *(Not used)*                                                         |
-| :red_circle:     | :red_circle:     | :white_circle:   | :white_circle:   | 12         | *(Not used)*                                                         |
-| :red_circle:     | :red_circle:     | :white_circle:   | :red_circle:     | 13         | *(Not used)*                                                         |
-| :red_circle:     | :red_circle:     | :red_circle:     | :white_circle:   | 14         | *(Not used)*                                                         |
-| :red_circle:     | :red_circle:     | :red_circle:     | :red_circle:     | 15         | eSpa Wifi access point started and waiting for you to connect to it. |
+| LED 1            | LED 2            | LED 3            | LED 4            | Description                                                          |
+|:----------------:|:----------------:|:----------------:|:----------------:|----------------------------------------------------------------------|
+| :white_circle:   | :white_circle:   | :white_circle:   | :white_circle:   | *(Not used)*                                                         |
+| :white_circle:   | :white_circle:   | :white_circle:   | :red_circle:     | Failed to connect to Wifi - check settings are correct.              |
+| :white_circle:   | :white_circle:   | :red_circle:     | :white_circle:   | *(Not used)*                                                         |
+| :white_circle:   | :white_circle:   | :red_circle:     | :red_circle:     | *(Not used)*                                                         |
+| :white_circle:   | :red_circle:     | :white_circle:   | :white_circle:   | Failed to connect to MQTT server - check settings are correct.       |
+| :white_circle:   | :red_circle:     | :white_circle:   | :red_circle:     | *(Not used)*                                                         |
+| :white_circle:   | :red_circle:     | :red_circle:     | :white_circle:   | *(Not used)*                                                         |
+| :white_circle:   | :red_circle:     | :red_circle:     | :red_circle:     | *(Not used)*                                                         |
+| :red_circle:     | :white_circle:   | :white_circle:   | :white_circle:   | *(Not used)*                                                         |
+| :red_circle:     | :white_circle:   | :white_circle:   | :red_circle:     | *(Not used)*                                                         |
+| :red_circle:     | :white_circle:   | :red_circle:     | :white_circle:   | *(Not used)*                                                         |
+| :red_circle:     | :white_circle:   | :red_circle:     | :red_circle:     | *(Not used)*                                                         |
+| :red_circle:     | :red_circle:     | :white_circle:   | :white_circle:   | *(Not used)*                                                         |
+| :red_circle:     | :red_circle:     | :white_circle:   | :red_circle:     | *(Not used)*                                                         |
+| :red_circle:     | :red_circle:     | :red_circle:     | :white_circle:   | *(Not used)*                                                         |
+| :red_circle:     | :red_circle:     | :red_circle:     | :red_circle:     | eSpa Wifi access point started and waiting for you to connect to it. |
 
 ## Web Interface
 

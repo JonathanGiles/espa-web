@@ -7,5 +7,6 @@ eSpa is being actively used by people around the world, with the controller boar
 Tested controllers that are known to work include:
 
 * **Spanet**
-  * SV Mini 2
   * SV Mini 1
+  * SV Mini 2
+  * SV Mini 3

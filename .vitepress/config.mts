@@ -15,7 +15,7 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Getting Started', link: '/getting-started' },
+      { text: 'Introduction', link: '/introduction' },
       { text: 'Firmware', link: '/firmware' },
       { text: 'Hardware', link: '/hardware' }
     ],
@@ -24,13 +24,13 @@ export default defineConfig({
       {
         text: 'Contents',
         items: [
+          { text: 'Introduction', link: '/introduction' },
           { text: 'Getting Started', link: '/getting-started' },
           
           { text: 'Firmware',
             items: [
               { text: 'Overview', link: '/firmware' },
               { text: 'Building', link: '/firmware-building' },
-              { text: 'Configuration', link: '/firmware-configuration' },
               { text: 'Updating', link: '/firmware-updating' }
             ]
           },
