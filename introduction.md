@@ -10,7 +10,7 @@ eSpa works by connecting directly to the controller board of your spa pool, usin
 
 ## I have my eSpa hardware, now what?
 
-Woo, you're so close! [Go here to get things setup](/firmware-configuration).
+Woo, you're so close! [Go here to get things setup](/getting-started).
 
 ## Discord
 
