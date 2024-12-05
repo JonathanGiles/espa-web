@@ -1,6 +1,6 @@
 # Troubleshooting
 
-If you are having trouble with your eSpa, there are a few steps you can take to make troubleshooting easier. This guide will help you identify common issues and provide solutions to help you get your eSpa up and running.
+If you are having trouble with your eSpa, there are a few steps you can take to make troubleshooting easier. This guide will help you identify common issues and provide solutions to help you get your eSpa up and running. Once you've worked through the guidance on this page, if you're still having trouble, please visit the [#troubleshooting](https://discord.gg/ntCR9hpW9x) channel on Discord for further assistance.
 
 ## Run the Latest Version
 
@@ -49,7 +49,9 @@ On the [eSpa Mini and eSpa Max PCBs](/hardware-pcb), there are four LEDs that ar
 
 ## Web Interface
 
-> Something about connecting to the web interface...
+If you have managed to power up your eSpa and configure it to connect to your WiFi, but you're not getting any data in MQTT (or your home automation system), your spa pool controller might be outputting data in a format that we have not yet seen, which means the eSpa team will need to get the information from you to add support. This happens occasionally, as spa pool controllers have different hardware and firmware.
+
+To check this, you can use the web interface of your eSpa, and click on the 'Spa Response' button to get a text dump from your spa pool. With this information, please visit the [#troubleshooting](https://discord.gg/ntCR9hpW9x) channel on Discord and provide the information to the eSpa team.
 
 ## Home Assistant and MQTT
 
