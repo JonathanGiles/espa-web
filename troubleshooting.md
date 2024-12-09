@@ -18,8 +18,9 @@ On [DIY hardware](/hardware-custom-build), it is recommended that a single LED b
 
 | Blink Interval       | Description                                                          |
 |----------------------|----------------------------------------------------------------------|
-| 250ms                | Failed to connect to Wifi - check settings are correct.              |
-| 1000ms               | Failed to connect to MQTT server - check settings are correct.       |
+| 100ms                | Failed to connect to Wifi - check settings are correct.              |
+| 500ms                | Failed to connect to MQTT server - check settings are correct.       |
+| 1000ms               | Failed to connect to Spa pool - ensure cables are connected properly.|
 | Solid On (no blink)  | eSpa Wifi access point started and waiting for you to connect to it. |
 
 ### eSpa Mini and eSpa Max PCBs
@@ -32,7 +33,7 @@ On the [eSpa Mini and eSpa Max PCBs](/hardware-pcb), there are four LEDs that ar
 |:----------------:|:----------------:|:----------------:|:----------------:|----------------------------------------------------------------------|
 | :white_circle:   | :white_circle:   | :white_circle:   | :white_circle:   | *(Not used)*                                                         |
 | :white_circle:   | :white_circle:   | :white_circle:   | :red_circle:     | Failed to connect to Wifi - check settings are correct.              |
-| :white_circle:   | :white_circle:   | :red_circle:     | :white_circle:   | *(Not used)*                                                         |
+| :white_circle:   | :white_circle:   | :red_circle:     | :white_circle:   | Failed to connect to Spa pool - ensure cables are connected properly.|
 | :white_circle:   | :white_circle:   | :red_circle:     | :red_circle:     | *(Not used)*                                                         |
 | :white_circle:   | :red_circle:     | :white_circle:   | :white_circle:   | Failed to connect to MQTT server - check settings are correct.       |
 | :white_circle:   | :red_circle:     | :white_circle:   | :red_circle:     | *(Not used)*                                                         |
