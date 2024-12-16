@@ -9,4 +9,4 @@ Tested controllers that are known to work include:
 * **Spanet**
   * SV Mini 1
   * SV Mini 2
-  * SV Mini 3
+  * SV3
