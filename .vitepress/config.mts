@@ -41,6 +41,7 @@ export default defineConfig({
               { text: 'Pre-Built PCBs', link: '/hardware-pcb' }
             ]
           },
+          { text: 'Home Automation', link: '/home-automation' },
           { text: 'Compatibility', link: '/compatibility' },
           { text: 'Troubleshooting', link: '/troubleshooting' }
         ]

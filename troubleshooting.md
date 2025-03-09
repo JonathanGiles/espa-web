@@ -4,10 +4,6 @@ If you are having trouble with your eSpa, there are a few steps you can take to 
 
 ## Run the Latest Version
 
-::: tip
-This is coming soon - we don't have built-in version checking / updating yet.
-:::
-
 The first thing you need to do whenever you run into a problem is ensure you are running the latest version of the software. The eSpa software is updated regularly to fix bugs and add new features, and will automatically update on its own, if configured to do so. To update your eSpa, follow the instructions in the [Updating the Software](/firmware-updating) guide.
 
 ## Status Lights
