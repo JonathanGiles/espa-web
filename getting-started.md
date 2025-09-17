@@ -4,7 +4,7 @@ This page is for people who have their eSpa hardware (either DIY or a pre-built 
 
 ## Connecting to your spa pool controller
 
-Your eSpa connects directly to the SpaNet controller in your spa pool. It will have a RJ-45 port labelled `EXP1`, which is where you will connect your eSpa. The eSpa will be powered by the SpaNet controller, so you do not need to provide any additional power. The USB-C port on the eSpa is programming and debugging purposes only - it isn't used in normal operation.
+Your eSpa connects directly to the controller in your spa pool. It will have a RJ-45 port labelled `EXP1`, which is where you will connect your eSpa. The eSpa will be powered by the spa pool controller, so you do not need to provide any additional power. The USB-C port on the eSpa is programming and debugging purposes only - it isn't used in normal operation.
 
 ## Accessing your eSpa
 
@@ -26,7 +26,7 @@ When you connect to the captive portal, you will be presented with a form to con
 
 ### MQTT Settings
 
-eSpa works by sending and receiving messages over MQTT. MQTT is a lightweight messaging protocol that is designed for devices with limited resources. You will need to configure the MQTT settings to connect to your MQTT broker. Most commonly, people will install [Mosquitto](https://mosquitto.org/) on their home server.
+eSpa works by [sending and receiving messages over MQTT](/mqtt-reference). MQTT is a lightweight messaging protocol that is designed for devices with limited resources. You will need to configure the MQTT settings to connect to your MQTT broker. Most commonly, people will install [Mosquitto](https://mosquitto.org/) on their home server.
 
 #### MQTT for Home Assistant Users
 

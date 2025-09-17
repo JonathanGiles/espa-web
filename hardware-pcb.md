@@ -2,6 +2,14 @@
 
 If building your own hardware is not your thing, you can [purchase a pre-built eSpa PCB online](https://store.espa.diy). This PCB is designed to be a drop-in solution for people wanting to add their spa pool to their home automation systems, and comes with all the required components already soldered in place. It is professionally manufactured and has been tested by many people in the eSpa community.
 
+::: warning
+These pre-build eSpa PCBs are built by hobby PCB designers for fun. They are not affiliated with any spa pool manufacturers, and there is no warranty or guarantee that they will work on your spa pool. Please refer to the [compatibility](/compatibility) page to see if your spa pool is compatible with the eSpa project.
+
+Also, note that these PCBs are not certified by any regulatory body, and you are using them at your own risk. If you are not comfortable with this, please consider building your own hardware from scratch instead.
+
+Finally, note that these PCBs are not intended to be a money-making enterprise – they are sold at cost to cover the expenses of manufacturing and shipping. The goal is to get the eSpa into more hands, so that more people can integrate their spa pool into their home automation systems.
+:::
+
 [![eSpa board](/images/espa-mini-top.jpg){width=50%}](https://store.espa.diy)
 
 ::: tip
