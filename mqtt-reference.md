@@ -2,6 +2,14 @@
 
 This document summarizes the MQTT topics and payloads used by eSpa for both status reporting and setting spa state.
 
+::: tip
+The eSpa firmware must be configured with the correct MQTT broker settings to use these features. Refer to the [getting started guide](/getting-started) for details on how to set up MQTT.
+:::
+
+::: tip
+Replace `<spaSerialNumber>` with your actual spa serial number (e.g., `2449XXXX-2449XXXX`). To get your spa serial number, refer to the [getting started guide](/getting-started) and log in to your eSpa web interface to find it.
+:::
+
 ## Status Topic
 
 - **Topic:** `sn_esp32/<spaSerialNumber>/status`
