@@ -42,6 +42,7 @@ export default defineConfig({
             ]
           },
           { text: 'Home Automation', link: '/home-automation' },
+          { text: 'MQTT Reference', link: '/mqtt-reference' },
           { text: 'Compatibility', link: '/compatibility' },
           { text: 'Troubleshooting', link: '/troubleshooting' }
         ]
