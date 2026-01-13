@@ -17,6 +17,9 @@ hero:
     - theme: alt
       text: Buy an eSpa
       link: https://store.espa.diy
+    - theme: alt
+      text: Flash your eSpa
+      link: https://flash.espa.diy
     # - theme: alt
     #   text: Hardware
     #   link: /hardware
