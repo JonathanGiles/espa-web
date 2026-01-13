@@ -16,11 +16,11 @@ Finally, note that these PCBs are not intended to be a money-making enterprise �
 You can buy the eSpa custom PCBs from an [online store](https://store.espa.diy).
 :::
 
-There are two board designs available: the [eSpa Mini](https://store.jonathangiles.net/product/espa-mini/), and the [eSpa Max](https://store.jonathangiles.net/product/espa-max/). They both run the same eSpa [firmware](/firmware), but the eSpa Max has more features and is designed for people who want to add more sensors or loop back from the eSpa to another spa pool component (such as the status LED available on some spa pools).
+There are two board designs available: the [eSpa Mini](https://store.jonathangiles.net/product/espa-mini/), and the [eSpa Max](https://store.jonathangiles.net/product/espa-max/). They both run the same eSpa [firmware](/firmware), but the eSpa Max has more features: CT clamp support, screw terminals for GPIO sensors, and an extra RJ-45 loop back from the eSpa to another spa pool component (such as the status LED available on some spa pools).
 
-The eSpa Mini connects to [certain spa pools](/compatibility). The eSpa Mini allows for you to control and monitor the operation of your spa pool, and integrate it into home automation software such as Home Assistant and OpenHAB by making use of the MQTT broker support in the firmware.
+Both eSpa models connect to [certain spa pools](/compatibility). The eSpa allows for you to control and monitor the operation of your spa pool, and integrate it into home automation software such as Home Assistant and OpenHAB by making use of the MQTT broker support in the firmware.
 
-Note: There is no cloud service offered with eSpa Mini or the firmware that it runs – everything is local to your home network, and you are required to set up integration with the device by integrating it with an MQTT broker running on your network.
+Note: There is no cloud service offered with eSpa or the firmware that it runs – everything is local to your home network, and you are required to set up integration with the device by integrating it with an MQTT broker running on your network.
 
 ## Features
 
