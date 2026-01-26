@@ -35,7 +35,7 @@ If you prefer to manually trigger updates, you can do so from the web interface:
    - Download **firmware_espa-v2_ota.bin** and **spiffs_espa-v2.bin** For eSpa Mini and eSpa Max v2.x PCBs
 2. Browse to your eSpa's IP address (e.g., `http://192.168.1.100`)
 3. Navigate to the Config, Firmware Update and select the files downloaded previously.
-   - Select the **firmware_ file** for the Application update
+   - Select the file named **firmware_** for the Application update
    - Select the file named **spiff_** for the File System update
    3.2. Select Install
 4. Wait for the update to download and install (usually 1-2 minutes)
