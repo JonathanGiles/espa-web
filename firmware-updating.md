@@ -30,13 +30,16 @@ With automatic updates enabled, your eSpa will periodically check for new firmwa
 
 If you prefer to manually trigger updates, you can do so from the web interface:
 
-1. Browse to your eSpa's IP address (e.g., `http://192.168.1.100`)
-2. Navigate to the Settings or System page
-3. Look for "Check for Updates" or "Firmware Update"
-4. Click "Check Now" to see if a new version is available
-5. If an update is available, click "Install Update"
-6. Wait for the update to download and install (usually 1-2 minutes)
-7. Your eSpa will restart automatically when the update is complete
+1. Visit https://github.com/wayne-love/ESPySpa/releases.
+   - Download  **firmware_espa-v1_ota.bin** and **spiffs_espa-v1.bin** for eSpa Mini and eSpa Max v1.x PCBs
+   - Download **firmware_espa-v2_ota.bin** and **spiffs_espa-v2.bin** For eSpa Mini and eSpa Max v2.x PCBs
+2. Browse to your eSpa's IP address (e.g., `http://192.168.1.100`)
+3. Navigate to the Config, Firmware Update and select the files downloaded previously.
+   - Select the **firmware_ file** for the Application update
+   - Select the file named **spiff_** for the File System update
+   3.2. Select Install
+4. Wait for the update to download and install (usually 1-2 minutes)
+5. Your eSpa will restart automatically when the update is complete
 
 ::: tip
 During an OTA update, your eSpa will be unavailable for a few minutes. The update typically completes within 2-3 minutes, and your eSpa will automatically reconnect to your network when done.
