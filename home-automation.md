@@ -23,7 +23,7 @@ There are multiple ways to connect eSpa. The following example uses the built-in
    https://www.home-assistant.io/integrations/mqtt/
 
 2. **Configure the Mosquitto broker app**  
-   Open the Mosquitto broker app page to create credentials for eSpa  :
+   Open the Mosquitto broker app page to create credentials for eSpa:
 
    [![Open Mosquitto broker app configuration](https://my.home-assistant.io/badges/supervisor_addon.svg?addon=core_mosquitto)](https://my.home-assistant.io/redirect/supervisor_addon/?addon=core_mosquitto)
    
