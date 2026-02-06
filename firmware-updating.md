@@ -61,7 +61,7 @@ During the update your eSpa will be temporarily unavailable. It should reconnect
 
 ::: tip
 After the restart, refresh the web page and check the firmware version (usually shown on the status or main page) to confirm the update was successful.
-If there are errors shown, try opening the web page in an private/incognito browser tab to avoid cache problems.
+If there are errors shown, try opening the web page in a private/incognito browser tab to avoid cache problems.
 :::
 
 ::: warning
