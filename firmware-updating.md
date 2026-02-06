@@ -50,7 +50,7 @@ If you prefer to manually apply an update (instead of waiting for automatic OTA)
 
    Click **Install**.
 
-4. **Wait for the process to finish**  
+3. **Wait for the process to finish**  
    - The update usually takes **1–3 minutes**.  
    - Do **not** close the browser tab or refresh the page during the upload/install.  
    - The device will automatically restart when complete.
