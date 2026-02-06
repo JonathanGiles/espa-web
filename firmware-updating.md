@@ -28,25 +28,49 @@ With automatic updates enabled, your eSpa will periodically check for new firmwa
 
 ### Manual OTA Updates
 
-If you prefer to manually trigger updates, you can do so from the web interface:
+If you prefer to manually apply an update (instead of waiting for automatic OTA), use the device's built-in web interface:
 
-1. Visit https://github.com/wayne-love/ESPySpa/releases.
-   - Download  **firmware_espa-v1_ota.bin** and **spiffs_espa-v1.bin** for eSpa Mini and eSpa Max v1.x PCBs
-   - Download **firmware_espa-v2_ota.bin** and **spiffs_espa-v2.bin** For eSpa Mini and eSpa Max v2.x PCBs
-2. Browse to your eSpa's IP address (e.g., `http://192.168.1.100`)
-3. Navigate to the Config, Firmware Update and select the files downloaded previously.
-   - Select the file named **firmware_** for the Application update
-   - Select the file named **spiff_** for the File System update
-   3.2. Select Install
-4. Wait for the update to download and install (usually 1-2 minutes)
-5. Your eSpa will restart automatically when the update is complete
+1. **Download the correct firmware files** from the latest release  
+   Visit: https://github.com/wayne-love/ESPySpa/releases  
+   - For **eSpa Mini** or **eSpa Max v1.x** PCBs → download:  
+     `firmware_espa-v1_ota.bin` (application firmware)  
+     `spiffs_espa-v1.bin`     (file system / SPIFFS)  
+   - For **eSpa Mini** or **eSpa Max v2.x** PCBs → download:  
+     `firmware_espa-v2_ota.bin` (application firmware)  
+     `spiffs_espa-v2.bin`       (file system / SPIFFS)
+
+      (Tip: Check the eSpa model on the status page of the eSpa, if this is not shown then eSpa v1 use a esp32-c6 chip, eSpa v2 use a esp32-c6 chip)
+   
+2. **Update firmware on eSpa**  
+   In a browser go to the device's IP address, for example:  
+   `http://192.168.1.100`
+   - Go to **Config** → **Firmware Updater**  
+   - In the **Application Update File** : choose the file starting with `firmware_` (e.g. `firmware_espa-v2_ota.bin`)  
+   - In the **File System Update File** : choose the file starting with `spiffs_` (e.g. `spiffs_espa-v2.bin`)
+
+   Click **Install**.
+
+4. **Wait for the process to finish**  
+   - The update usually takes **1–3 minutes**.  
+   - Do **not** close the browser tab or refresh the page during the upload/install.  
+   - The device will automatically restart when complete.
 
 ::: tip
-During an OTA update, your eSpa will be unavailable for a few minutes. The update typically completes within 2-3 minutes, and your eSpa will automatically reconnect to your network when done.
+During the update your eSpa will be temporarily unavailable. It should reconnect to the network automatically after restarting (typically within 2–3 minutes total).
+:::
+
+::: tip
+After the restart, refresh the web page and check the firmware version (usually shown on the status or main page) to confirm the update was successful.
+If there are errors shown, try opening the web page in an private/incognito browser tab to avoid cache problems.
 :::
 
 ::: warning
-Don't power off your eSpa during an OTA update! Wait for the update to complete and the device to restart. If power is lost during an update, you may need to re-flash the firmware via USB.
+**Never power off the device during an OTA update!**  
+Interrupting the process (power loss, unplugging, etc.) can corrupt the firmware. If this happens, you will need to re-flash via USB.
+:::
+
+::: warning
+Always use the files that match your hardware version (v1.x or v2.x). If you are unsure which version to you have please contact us on Discord https://espa.diy/troubleshooting.html
 :::
 
 ## USB Flashing (Web Tool)
