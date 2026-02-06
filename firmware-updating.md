@@ -70,7 +70,7 @@ Interrupting the process (power loss, unplugging, etc.) can corrupt the firmware
 :::
 
 ::: warning
-Always use the files that match your hardware version (v1.x or v2.x). If you are unsure which version to you have please contact us on Discord https://espa.diy/troubleshooting.html
+Always use the files that match your hardware version (v1.x or v2.x). If you are unsure which version you have please contact us on Discord https://espa.diy/troubleshooting.html
 :::
 
 ## USB Flashing (Web Tool)
