@@ -10,7 +10,7 @@ If you are running an MQTT broker already, or if you are running Home Assistant 
 
 eSpa publishes MQTT messages that already follow the [Home Assistant MQTT discovery format](/mqtt-reference). This makes integration with Home Assistant very straightforward.
 
-There are multiple ways to connect eSpa. The following example uses the built-in MQTT integration together with the native Mosquitto broker app on Home Assistant OS (2026.2).
+There are multiple ways to connect eSpa. The following example uses the built-in MQTT integration together with the native Mosquitto broker app, tested with Home Assistant OS 2026.2.
 
 ### Step-by-step setup
 
