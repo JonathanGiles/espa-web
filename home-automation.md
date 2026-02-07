@@ -34,19 +34,19 @@ There are multiple ways to connect eSpa. The following example uses the built-in
    
    Click **Save**.
 
-4. **Configure eSpa**  
+3. **Configure eSpa**  
    Open a browser and go to your eSpa device's IP address (e.g. `http://192.168.1.100`).
 
    Navigate to the **Config** section and enter the following:
 
    - **MQTT Server**: IP address of your Home Assistant instance  
    - **MQTT Port**: Usually `1883` (check the "Normal MQTT" port in the Mosquitto app info)  
-   - **MQTT Username** and **MQTT Password**: The credentials you created in step 3  
+   - **MQTT Username** and **MQTT Password**: The credentials you created in step 2  
    - **Spa Poll Frequency**: Leave at default (60 seconds)  
 
    Click **Save**.
 
-5. **Verify in Home Assistant**  
+4. **Verify in Home Assistant**  
    Go to the MQTT integration page:
 
    [![Open MQTT integration overview](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=mqtt)
