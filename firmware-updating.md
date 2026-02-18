@@ -39,16 +39,22 @@ If you prefer to manually apply an update (instead of waiting for automatic OTA)
      `firmware_espa-v2_ota.bin` (application firmware)  
      `spiffs_espa-v2.bin`       (file system / SPIFFS)
 
-      (Tip: Check the eSpa model on the status page of the eSpa, if this is not shown then eSpa v1 use a esp32-c6 chip, eSpa v2 use a esp32-c6 chip)
+      ::: tip
+      Check the eSpa model on the status page of the eSpa, if this is not shown then eSpa v1 use a ESP32-S3 chip, eSpa v2 use a ESP32-C6 chip
+      :::
    
 2. **Update firmware on eSpa**  
-   In a browser go to the device's IP address, for example:  
-   `http://192.168.1.100`
+   In a browser go to the eSpa's IP address, for example:  
+   `http://192.168.4.1`
    - Go to **Config** → **Firmware Updater**  
    - In the **Application Update File** : choose the file starting with `firmware_` (e.g. `firmware_espa-v2_ota.bin`)  
    - In the **File System Update File** : choose the file starting with `spiffs_` (e.g. `spiffs_espa-v2.bin`)
 
    Click **Install**.
+   
+   ::: tip
+   If the eSpa web interface is not working and/or returning internal server error, preventing you from accessing the firmware updater menu item. Try accessing the firmware OTA interface at http://IPaddress/fota for example `http://192.168.4.1/fota`
+   :::
 
 3. **Wait for the process to finish**  
    - The update usually takes **1–3 minutes**.  

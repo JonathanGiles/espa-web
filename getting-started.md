@@ -45,4 +45,4 @@ eSpa works by [sending and receiving messages over MQTT](/mqtt-reference). MQTT 
 
 #### MQTT for Home Assistant Users
 
-For users of Home Assistant, you can follow the [Home Assistant Add-on: Mosquitto Broker](https://github.com/home-assistant/addons/blob/master/mosquitto/DOCS.md) guide to set up a MQTT broker. Once you set this up (with a username and password), you can pass this to the eSpa to use for publishing status updates for your spa pool.
+For users of Home Assistant, refer to [Home Assistant Integration](/home-automation.html#home-assistant-integration) guide.
