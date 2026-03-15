@@ -49,13 +49,13 @@ On the [eSpa v1 (Mini and Max) PCBs](/hardware-pcb), there are four LEDs that ar
 
 The eSpa v2 has a single RGB LED that displays different colors and blink patterns to indicate the current status. When everything is working correctly, the LED will cycle through a rainbow animation. When there is an issue, the LED will display a specific color and blink pattern:
 
-| Color     | Animation                              | Description                                                           |
-|-----------|----------------------------------------|-----------------------------------------------------------------------|
-| Rainbow   | Smooth color cycling                   | Normal operation - everything is working correctly.                   |
-| Red       | Two quick pulses, then pause           | Failed to connect to WiFi - check settings are correct.               |
-| Yellow    | Slowly fading in and out               | Waiting for spa pool - ensure cables are connected properly.          |
-| Purple    | Flickering with occasional bright flash| Failed to connect to MQTT server - check settings are correct.        |
-| Blue/Cyan | Gently shifting between blue and cyan  | eSpa WiFi access point started and waiting for you to connect to it.  |
+| Color                                  | Animation                              | Description                                                           |
+|:--------------------------------------:|----------------------------------------|-----------------------------------------------------------------------|
+| :rainbow:                              | Smooth color cycling                   | Normal operation - everything is working correctly.                   |
+| :red_circle:                           | Two quick pulses, then pause           | Failed to connect to WiFi - check settings are correct.               |
+| :yellow_circle:                        | Slowly fading in and out               | Waiting for spa pool - ensure cables are connected properly.          |
+| :purple_circle:                        | Flickering with occasional bright flash| Failed to connect to MQTT server - check settings are correct.        |
+| :large_blue_circle:                    | Gently shifting between blue and cyan  | eSpa WiFi access point started and waiting for you to connect to it.  |
 
 ## Web Interface
 
