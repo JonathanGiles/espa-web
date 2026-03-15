@@ -32,30 +32,30 @@ On [DIY hardware](/hardware-custom-build), it is recommended that a single LED b
 | 1000ms               | Failed to connect to Spa pool - ensure cables are connected properly.|
 | Solid On (no blink)  | eSpa Wifi access point started and waiting for you to connect to it. |
 
-### eSpa Mini and eSpa Max PCBs
+### eSpa v1 (Mini and Max)
 
 [![Knight Rider Animation](/images/knight-rider.gif)](/images/knight-rider.gif)
 
-On the [eSpa Mini and eSpa Max PCBs](/hardware-pcb), there are four LEDs that are used for status indication. The LEDs are labelled 1, 2, 3, and 4. When everything is working fine, the four LEDs will light up in an animation going backwards and forwards. When one or more of the lights is lit up, it indicates an error condition, and you can refer to the table below to identify the issue:
+On the [eSpa v1 (Mini and Max) PCBs](/hardware-pcb), there are four LEDs that are used for status indication. The LEDs are labelled 1, 2, 3, and 4. When everything is working fine, the four LEDs will light up in an animation going backwards and forwards. When one or more of the lights is lit up, it indicates an error condition, and you can refer to the table below to identify the issue:
 
 | LED 1            | LED 2            | LED 3            | LED 4            | Description                                                          |
 |:----------------:|:----------------:|:----------------:|:----------------:|----------------------------------------------------------------------|
-| :white_circle:   | :white_circle:   | :white_circle:   | :white_circle:   | *(Not used)*                                                         |
 | :white_circle:   | :white_circle:   | :white_circle:   | :red_circle:     | Failed to connect to Wifi - check settings are correct.              |
 | :white_circle:   | :white_circle:   | :red_circle:     | :white_circle:   | Failed to connect to Spa pool - ensure cables are connected properly.|
-| :white_circle:   | :white_circle:   | :red_circle:     | :red_circle:     | *(Not used)*                                                         |
 | :white_circle:   | :red_circle:     | :white_circle:   | :white_circle:   | Failed to connect to MQTT server - check settings are correct.       |
-| :white_circle:   | :red_circle:     | :white_circle:   | :red_circle:     | *(Not used)*                                                         |
-| :white_circle:   | :red_circle:     | :red_circle:     | :white_circle:   | *(Not used)*                                                         |
-| :white_circle:   | :red_circle:     | :red_circle:     | :red_circle:     | *(Not used)*                                                         |
-| :red_circle:     | :white_circle:   | :white_circle:   | :white_circle:   | *(Not used)*                                                         |
-| :red_circle:     | :white_circle:   | :white_circle:   | :red_circle:     | *(Not used)*                                                         |
-| :red_circle:     | :white_circle:   | :red_circle:     | :white_circle:   | *(Not used)*                                                         |
-| :red_circle:     | :white_circle:   | :red_circle:     | :red_circle:     | *(Not used)*                                                         |
-| :red_circle:     | :red_circle:     | :white_circle:   | :white_circle:   | *(Not used)*                                                         |
-| :red_circle:     | :red_circle:     | :white_circle:   | :red_circle:     | *(Not used)*                                                         |
-| :red_circle:     | :red_circle:     | :red_circle:     | :white_circle:   | *(Not used)*                                                         |
 | :red_circle:     | :red_circle:     | :red_circle:     | :red_circle:     | eSpa Wifi access point started and waiting for you to connect to it. |
+
+### eSpa v2
+
+The eSpa v2 has a single RGB LED that displays different colors and blink patterns to indicate the current status. When everything is working correctly, the LED will cycle through a rainbow animation. When there is an issue, the LED will display a specific color and blink pattern:
+
+| Color     | Animation                              | Description                                                           |
+|-----------|----------------------------------------|-----------------------------------------------------------------------|
+| Rainbow   | Smooth color cycling                   | Normal operation - everything is working correctly.                   |
+| Red       | Two quick pulses, then pause           | Failed to connect to WiFi - check settings are correct.               |
+| Yellow    | Slowly fading in and out               | Waiting for spa pool - ensure cables are connected properly.          |
+| Purple    | Flickering with occasional bright flash| Failed to connect to MQTT server - check settings are correct.        |
+| Blue/Cyan | Gently shifting between blue and cyan  | eSpa WiFi access point started and waiting for you to connect to it.  |
 
 ## Web Interface
 
