@@ -31,6 +31,8 @@ For detailed instructions, troubleshooting, or alternative flashing methods, see
 
 ## Connecting to your spa pool controller
 
+[![eSpa Mini v2](/images/espa-mini-v2-angle.jpg){width=50%}](https://store.espa.diy)
+
 Your eSpa connects directly to the controller in your spa pool. It will have a RJ-45 port labelled `EXP1`, which is where you will connect your eSpa. The eSpa will be powered by the spa pool controller, so you do not need to provide any additional power. The USB-C port on the eSpa is programming and debugging purposes only - it isn't used in normal operation.
 
 ## Accessing your eSpa

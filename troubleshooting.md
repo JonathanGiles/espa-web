@@ -44,11 +44,11 @@ On [DIY hardware](/hardware-custom-build), it is recommended that a single LED b
 | 1000ms               | Failed to connect to Spa pool - ensure cables are connected properly.|
 | Solid On (no blink)  | eSpa Wifi access point started and waiting for you to connect to it. |
 
-### eSpa v1 (Mini and Max)
+### eSpa v1 (Mini)
 
 [![Knight Rider Animation](/images/knight-rider.gif)](/images/knight-rider.gif)
 
-On the [eSpa v1 (Mini and Max) PCBs](/hardware-pcb), there are four LEDs that are used for status indication. The LEDs are labelled 1, 2, 3, and 4. When everything is working fine, the four LEDs will light up in an animation going backwards and forwards. When one or more of the lights is lit up, it indicates an error condition, and you can refer to the table below to identify the issue:
+On the [eSpa v1 (Mini) PCBs](/hardware-pcb), there are four LEDs that are used for status indication. The LEDs are labelled 1, 2, 3, and 4. When everything is working fine, the four LEDs will light up in an animation going backwards and forwards. When one or more of the lights is lit up, it indicates an error condition, and you can refer to the table below to identify the issue:
 
 | LED 1            | LED 2            | LED 3            | LED 4            | Description                                                          |
 |:----------------:|:----------------:|:----------------:|:----------------:|----------------------------------------------------------------------|
@@ -254,7 +254,7 @@ dmesg | grep tty
 
 When posting logs to Discord for troubleshooting:
 
-1. **eSpa hardware**: Specify if you're using DIY, eSpa Mini, or eSpa Max
+1. **eSpa hardware**: Specify if you're using DIY or eSpa Mini v2
 2. **Firmware version**: Check web interface or boot logs
 3. **Spa controller**: Brand and model of your spa pool controller
 4. **Problem description**: What's not working and when it started

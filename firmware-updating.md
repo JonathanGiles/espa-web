@@ -44,10 +44,10 @@ If you prefer to manually apply an update (instead of waiting for automatic OTA)
 
 1. **Download the correct firmware files** from the latest release  
    Visit: https://github.com/wayne-love/ESPySpa/releases  
-   - For **eSpa Mini** or **eSpa Max v1.x** PCBs → download:  
+   - For **eSpa Mini v1.x** PCBs → download:  
      `firmware_espa-v1_ota.bin` (application firmware)  
      `spiffs_espa-v1.bin`     (file system / SPIFFS)  
-   - For **eSpa Mini** or **eSpa Max v2.x** PCBs → download:  
+   - For **eSpa Mini v2.x** PCBs → download:  
      `firmware_espa-v2_ota.bin` (application firmware)  
      `spiffs_espa-v2.bin`       (file system / SPIFFS)
 
@@ -107,8 +107,8 @@ If OTA updates aren't working, or if you need to recover from a failed update, y
 2. Connect your eSpa to your computer using a USB-C cable
 3. Visit **[https://flash.espa.diy](https://flash.espa.diy)** in Chrome, Edge, or Opera browser
 4. Select your device type from the dropdown menu:
-   - **eSpa v1**: For eSpa Mini and eSpa Max v1.x PCBs
-   - **eSpa v2**: For eSpa Mini and eSpa Max v2.x PCBs
+   - **eSpa v1**: For eSpa Mini v1.x PCBs
+   - **eSpa v2**: For eSpa Mini v2.x PCBs
    - **Custom**: For DIY builds or custom hardware
 5. Browse the available firmware releases and click the **"Flash"** button next to the version you want (typically the latest release marked "LATEST")
 6. When prompted, click **"Connect"** and select your eSpa device from the serial port list (usually appears as "USB Serial" or similar)

@@ -22,25 +22,24 @@ Also, note that these PCBs are not certified by any regulatory body, and you are
 Finally, note that these PCBs are not intended to be a money-making enterprise – they are sold at cost to cover the expenses of manufacturing and shipping. The goal is to get the eSpa into more hands, so that more people can integrate their spa pool into their home automation systems.
 :::
 
-[![eSpa board](/images/espa-mini-top.jpg){width=50%}](https://store.espa.diy)
+[![eSpa Mini v2](/images/espa-mini-v2-top.jpg){width=50%}](https://store.espa.diy)
+[![eSpa Mini v2 - bottom](/images/espa-mini-v2-bottom.jpg){width=50%}](https://store.espa.diy)
 
 ::: tip
 You can buy the eSpa custom PCBs from an [online store](https://store.espa.diy).
 :::
 
-There are two board designs available: the [eSpa Mini](https://store.jonathangiles.net/product/espa-mini/), and the [eSpa Max](https://store.jonathangiles.net/product/espa-max/). They both run the same eSpa [firmware](/firmware), but the eSpa Max has more features: CT clamp support, screw terminals for GPIO sensors, and an extra RJ-45 loop back from the eSpa to another spa pool component (such as the status LED available on some spa pools).
-
-Both eSpa models connect to [certain spa pools](/compatibility). The eSpa allows for you to control and monitor the operation of your spa pool, and integrate it into home automation software such as Home Assistant and OpenHAB by making use of the MQTT broker support in the firmware.
+The [eSpa Mini v2](https://store.jonathangiles.net/product/espa-mini/) runs the eSpa [firmware](/firmware) and connects to [certain spa pools](/compatibility). The eSpa allows for you to control and monitor the operation of your spa pool, and integrate it into home automation software such as Home Assistant and OpenHAB by making use of the MQTT broker support in the firmware.
 
 Note: There is no cloud service offered with eSpa or the firmware that it runs – everything is local to your home network, and you are required to set up integration with the device by integrating it with an MQTT broker running on your network.
 
 ## Features
 
-* Powered by an ESP32-S3-Mini with 8MB of flash.
-* The ESP32 has built-in WiFi and Bluetooth support (but the current firmware does not make any use of the Bluetooth functionality)
+* Powered by an ESP32-C6-Wroom with 8MB of flash.
+* The ESP32 has built-in WiFi, Bluetooth, and Matter support (but the current firmware does not make any use of the Bluetooth or Matter functionality).
 * No need for a separate power supply – power is supplied via the RJ-45 connection when connected to the spa pool controller.
 * USB-C connector for easy flashing and debugging.
-* Eight GPIO pin headers (for GPIO 1 through GPIO 9 on the ESP32), as well as pin headers for +3.3v and GND. This allows for connecting external devices and sensors.
+* Fourteen pin headers (GPIO 1, 2, 3, 6, 7, 11, 15, 22, and 23, as well as +3.3V, EN, GN, RX, and TX pins). This allows for connecting external devices and sensors.
 * Safety fuse to reduce risk of damage to spa pool controller board.
 
 ## Important disclaimers

@@ -12,6 +12,8 @@ head:
 
 # Introduction
 
+[![eSpa Mini v2](/images/espa-mini-v2-angle.jpg){width=60%}](https://store.espa.diy)
+
 eSpa is an open source community for spa home automation, built around [firmware](/firmware) and a simple [hardware design](/hardware) that you can build yourself, or [purchase pre-assembled](https://store.espa.diy).
 
 ## What is eSpa?

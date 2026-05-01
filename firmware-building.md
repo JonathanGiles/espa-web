@@ -68,8 +68,8 @@ Alternatively, you can download the repository as a ZIP file from GitHub and ext
 The eSpa project supports multiple hardware configurations through Platform.io environments. Open the `platformio.ini` file at the root of the project to see all available environments:
 
 - **`esp32dev`**: For generic ESP32 development boards and DIY builds
-- **`espa-v1`**: For eSpa Mini and eSpa Max v1.x PCBs (ESP32-S3 based)
-- **`espa-v2`**: For eSpa Mini and eSpa Max v2.x PCBs (newer hardware)
+- **`espa-v1`**: For eSpa Mini v1.x PCBs (ESP32-S3 based)
+- **`espa-v2`**: For eSpa Mini v2.x PCBs (ESP32-C6 based)
 
 Each environment has specific settings for the target hardware, including pin configurations, board definitions, and build flags.
 
