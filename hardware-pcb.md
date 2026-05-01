@@ -22,8 +22,7 @@ Also, note that these PCBs are not certified by any regulatory body, and you are
 Finally, note that these PCBs are not intended to be a money-making enterprise – they are sold at cost to cover the expenses of manufacturing and shipping. The goal is to get the eSpa into more hands, so that more people can integrate their spa pool into their home automation systems.
 :::
 
-[![eSpa Mini v2](/images/espa-mini-v2-top.jpg){width=50%}](https://store.espa.diy)
-[![eSpa Mini v2 - bottom](/images/espa-mini-v2-bottom.jpg){width=50%}](https://store.espa.diy)
+[![eSpa Mini v2](/images/espa-mini-v2-composite.jpg)](https://store.espa.diy)
 
 ::: tip
 You can buy the eSpa custom PCBs from an [online store](https://store.espa.diy).
