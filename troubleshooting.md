@@ -1,3 +1,15 @@
+---
+title: eSpa Troubleshooting - Fix WiFi, MQTT & Connection Issues
+description: Troubleshooting guide for eSpa spa pool controller. Fix WiFi connection issues, MQTT problems, Home Assistant integration, status LED meanings, and more.
+head:
+  - - meta
+    - property: og:title
+      content: eSpa Troubleshooting - Fix WiFi, MQTT & Connection Issues
+  - - meta
+    - property: og:description
+      content: Troubleshooting guide for eSpa spa pool controller. Fix WiFi connection issues, MQTT problems, Home Assistant integration, status LED meanings, and more.
+---
+
 # Troubleshooting
 
 If you are having trouble with your eSpa, there are a few steps you can take to make troubleshooting easier. This guide will help you identify common issues and provide solutions to help you get your eSpa up and running. Once you've worked through the guidance on this page, if you're still having trouble, please visit the [#troubleshooting](https://discord.gg/ntCR9hpW9x) channel on Discord for further assistance.
@@ -100,7 +112,7 @@ If nothing appears in Home Assistant, first check the status LEDs and web interf
 
 ### Can't Find eSpa WiFi Access Point
 
-If you don't see the `eSpa-wifi-AP` network:
+If you don't see the `eSpa-wifi-AP` network (default password: `eSPA-Password`):
 
 1. **Check power**: Ensure eSpa is receiving power from the spa controller
 2. **Check status LEDs**: All LEDs solid on (PCB) or single LED solid on (DIY) indicates AP mode

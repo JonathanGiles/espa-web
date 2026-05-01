@@ -1,3 +1,15 @@
+---
+title: eSpa Compatibility - Supported Spa Pool Controllers
+description: Check if your spa pool is compatible with eSpa. Works with Spanet SV controllers including SV Mini, SV2, and SV3. Full list of tested spa pool brands and models.
+head:
+  - - meta
+    - property: og:title
+      content: eSpa Compatibility - Supported Spa Pool Controllers
+  - - meta
+    - property: og:description
+      content: Check if your spa pool is compatible with eSpa. Works with Spanet SV controllers including SV Mini, SV2, and SV3. Full list of tested spa pool brands and models.
+---
+
 # Compatibility
 
 The eSpa [firmware](/firmware) (and [related hardware](/hardware)) should work with any [Spanet controller](https://www.spanet.com.au/product-category/spa-controls/) that has the appropriate connection for the wifi module (this is commonly stated as “SV SmartLink WiFi remote access compatible”). 

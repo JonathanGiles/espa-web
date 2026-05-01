@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://espa.diy/sitemap.xml

@@ -1,3 +1,15 @@
+---
+title: eSpa Firmware - Features & Overview
+description: eSpa firmware for ESP32 provides WiFi connectivity, MQTT support, web interface, OTA updates, and temperature control for your spa pool home automation.
+head:
+  - - meta
+    - property: og:title
+      content: eSpa Firmware - Features & Overview
+  - - meta
+    - property: og:description
+      content: eSpa firmware for ESP32 provides WiFi connectivity, MQTT support, web interface, OTA updates, and temperature control for your spa pool home automation.
+---
+
 # Firmware
 
 The eSpa firmware is designed to be easy to use, and to provide a lot of features to integrate your spa pool into your home automation. Some of the features include:

@@ -2,14 +2,55 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   title: "eSpa",
-  description: "An open source community for spa home automation",
+  description: "Open source spa pool home automation controller. Connect your spa to WiFi, control it via MQTT, and integrate with Home Assistant. Buy pre-built or DIY with ESP32.",
+  sitemap: {
+    hostname: 'https://espa.diy'
+  },
   head: [
     ['link', { rel: "apple-touch-icon", sizes: "180x180", href: "/assets/favicons/apple-touch-icon.png"}],
     ['link', { rel: "icon", type: "image/png", sizes: "32x32", href: "/assets/favicons/favicon-32x32.png"}],
     ['link', { rel: "icon", type: "image/png", sizes: "16x16", href: "/assets/favicons/favicon-16x16.png"}],
     ['link', { rel: "manifest", href: "/assets/favicons/site.webmanifest"}],
     ['link', { rel: "mask-icon", href: "/assets/favicons/safari-pinned-tab.svg", color: "#3a0839"}],
-    ['link', { rel: "shortcut icon", href: "/assets/favicons/favicon.ico"}]
+    ['link', { rel: "shortcut icon", href: "/assets/favicons/favicon.ico"}],
+    // Open Graph
+    ['meta', { property: "og:type", content: "website" }],
+    ['meta', { property: "og:site_name", content: "eSpa" }],
+    ['meta', { property: "og:image", content: "https://espa.diy/images/logo_eSpa_02_320px.png" }],
+    // Twitter Card
+    ['meta', { name: "twitter:card", content: "summary" }],
+    ['meta', { name: "twitter:image", content: "https://espa.diy/images/logo_eSpa_02_320px.png" }],
+    // Additional SEO
+    ['meta', { name: "robots", content: "index, follow" }],
+    ['meta', { name: "author", content: "eSpa Community" }],
+    // JSON-LD Structured Data
+    ['script', { type: "application/ld+json" }, JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "eSpa - Spa Pool Home Automation Controller",
+      "description": "Open source ESP32-based spa pool controller for WiFi connectivity, MQTT integration, and Home Assistant support. Connect your spa to your smart home.",
+      "brand": { "@type": "Brand", "name": "eSpa" },
+      "url": "https://espa.diy",
+      "image": "https://espa.diy/images/logo_eSpa_02_320px.png",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://store.espa.diy",
+        "availability": "https://schema.org/InStock",
+        "priceCurrency": "NZD"
+      },
+      "category": "Smart Home > Pool & Spa Automation"
+    })],
+    ['script', { type: "application/ld+json" }, JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "eSpa",
+      "url": "https://espa.diy",
+      "logo": "https://espa.diy/images/logo_eSpa_02_320px.png",
+      "sameAs": [
+        "https://github.com/wayne-love/espyspa",
+        "https://discord.gg/faK8Ag4wHn"
+      ]
+    })]
   ],
 
   themeConfig: {

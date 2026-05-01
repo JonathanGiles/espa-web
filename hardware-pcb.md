@@ -1,3 +1,15 @@
+---
+title: Buy eSpa Pre-Built PCB - Ready-to-Install Spa Controller
+description: Buy a pre-assembled eSpa PCB for easy spa pool home automation. Plug-and-play ESP32 controller with WiFi, MQTT, and Home Assistant support. Ships worldwide.
+head:
+  - - meta
+    - property: og:title
+      content: Buy eSpa Pre-Built PCB - Ready-to-Install Spa Controller
+  - - meta
+    - property: og:description
+      content: Buy a pre-assembled eSpa PCB for easy spa pool home automation. Plug-and-play ESP32 controller with WiFi, MQTT, and Home Assistant support. Ships worldwide.
+---
+
 # Buying a Pre-Built PCB
 
 If building your own hardware is not your thing, you can [purchase a pre-built eSpa PCB online](https://store.espa.diy). This PCB is designed to be a drop-in solution for people wanting to add their spa pool to their home automation systems, and comes with all the required components already soldered in place. It is professionally manufactured and has been tested by many people in the eSpa community.

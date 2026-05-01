@@ -1,3 +1,15 @@
+---
+title: Updating eSpa Firmware - OTA & USB Update Guide
+description: How to update your eSpa spa pool controller firmware. Supports over-the-air (OTA) updates and USB flashing for the latest features and bug fixes.
+head:
+  - - meta
+    - property: og:title
+      content: Updating eSpa Firmware - OTA & USB Update Guide
+  - - meta
+    - property: og:description
+      content: How to update your eSpa spa pool controller firmware. Supports over-the-air (OTA) updates and USB flashing for the latest features and bug fixes.
+---
+
 # Updating the Firmware
 
 ::: info For End Users

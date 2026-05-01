@@ -1,3 +1,15 @@
+---
+title: eSpa Home Automation - Home Assistant & MQTT Integration
+description: Integrate your spa pool with Home Assistant, OpenHAB, and other smart home systems using eSpa's MQTT interface. Step-by-step setup guide included.
+head:
+  - - meta
+    - property: og:title
+      content: eSpa Home Automation - Home Assistant & MQTT Integration
+  - - meta
+    - property: og:description
+      content: Integrate your spa pool with Home Assistant, OpenHAB, and other smart home systems using eSpa's MQTT interface. Step-by-step setup guide included.
+---
+
 # Home Automation
 
 The eSpa firmware exposes a MQTT interface to allow for easy integration with home automation systems. This allows you to control your spa from your home automation system, and also receive notifications when the spa is in use or when the temperature changes. Because of this support, home automation systems like Home Assistant and OpenHab can easily integrate with the eSpa firmware.

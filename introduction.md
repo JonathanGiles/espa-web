@@ -1,3 +1,15 @@
+---
+title: Introduction to eSpa - Open Source Spa Pool Controller
+description: eSpa is an open source ESP32-based spa pool home automation controller. Connect your spa to WiFi and smart home systems like Home Assistant via MQTT.
+head:
+  - - meta
+    - property: og:title
+      content: Introduction to eSpa - Open Source Spa Pool Controller
+  - - meta
+    - property: og:description
+      content: eSpa is an open source ESP32-based spa pool home automation controller. Connect your spa to WiFi and smart home systems like Home Assistant via MQTT.
+---
+
 # Introduction
 
 eSpa is an open source community for spa home automation, built around [firmware](/firmware) and a simple [hardware design](/hardware) that you can build yourself, or [purchase pre-assembled](https://store.espa.diy).

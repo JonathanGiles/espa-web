@@ -1,3 +1,15 @@
+---
+title: Building eSpa Firmware from Source - Developer Guide
+description: How to build eSpa firmware from source using PlatformIO. Set up your development environment, compile, and flash custom firmware to your ESP32 spa controller.
+head:
+  - - meta
+    - property: og:title
+      content: Building eSpa Firmware from Source - Developer Guide
+  - - meta
+    - property: og:description
+      content: How to build eSpa firmware from source using PlatformIO. Set up your development environment, compile, and flash custom firmware to your ESP32 spa controller.
+---
+
 # Building Firmware from Source
 
 ::: info For Developers

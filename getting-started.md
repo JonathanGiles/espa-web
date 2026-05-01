@@ -1,3 +1,15 @@
+---
+title: Getting Started with eSpa - Setup Guide
+description: Step-by-step guide to setting up your eSpa spa pool controller. Flash firmware, connect to your spa, configure WiFi, and start controlling your spa from your phone.
+head:
+  - - meta
+    - property: og:title
+      content: Getting Started with eSpa - Setup Guide
+  - - meta
+    - property: og:description
+      content: Step-by-step guide to setting up your eSpa spa pool controller. Flash firmware, connect to your spa, configure WiFi, and start controlling your spa from your phone.
+---
+
 # Getting Started
 
 This page is for people who have their eSpa hardware (either DIY or a pre-built PCB) and are looking to get started with it. If you are looking to get some hardware, please refer to the [hardware page](/hardware) to get started on that.
@@ -29,7 +41,7 @@ To do this, follow these steps:
 
 1. Bring your mobile phone, tablet, or computer nearby to your spa pool.
 2. Scan for Wifi access points, and you should find a new access point named `eSpa-wifi-AP`.
-3. Connect to this access point from your mobile phone, tablet, or computer.
+3. Connect to this access point from your mobile phone, tablet, or computer. The default password is `eSPA-Password`.
 4. Your phone / computer should connect to the captive portal on the ESP32. If you do not see the captive portal, try browsing to [http://192.168.4.1](http://192.168.4.1) in your browser, as this is the default IP address of eSpa devices when in access point mode.
 5. Configure and save the details of your home network in the captive portal (more details below).
 6. eSpa will restart and connect to your home network (and the Wifi access point will no longer be accessible (unless you follow the [troubleshooting](/troubleshooting) guide)).

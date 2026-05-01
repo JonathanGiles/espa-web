@@ -1,5 +1,14 @@
 ---
 outline: [2,3]
+title: eSpa MQTT Reference - Topics, Commands & Auto-Discovery
+description: Complete MQTT reference for eSpa spa pool controller. Topics for temperature, pumps, lights, blower, and Home Assistant auto-discovery configuration.
+head:
+  - - meta
+    - property: og:title
+      content: eSpa MQTT Reference - Topics, Commands & Auto-Discovery
+  - - meta
+    - property: og:description
+      content: Complete MQTT reference for eSpa spa pool controller. Topics for temperature, pumps, lights, blower, and Home Assistant auto-discovery configuration.
 ---
 
 # eSpa MQTT Reference

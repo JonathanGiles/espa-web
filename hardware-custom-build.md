@@ -1,3 +1,15 @@
+---
+title: DIY eSpa Build Guide - Build Your Own Spa Controller
+description: Build your own ESP32 spa pool controller with this DIY guide. Parts list, wiring diagrams, and step-by-step instructions for connecting to your spa's EXP1 port.
+head:
+  - - meta
+    - property: og:title
+      content: DIY eSpa Build Guide - Build Your Own Spa Controller
+  - - meta
+    - property: og:description
+      content: Build your own ESP32 spa pool controller with this DIY guide. Parts list, wiring diagrams, and step-by-step instructions for connecting to your spa's EXP1 port.
+---
+
 # Building Your Own Hardware
 
 ::: warning
