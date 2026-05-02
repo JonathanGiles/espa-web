@@ -20,7 +20,7 @@ The first thing you need to do whenever you run into a problem is ensure you are
 
 ## Firmware Flashing Issues
 
-If you're having trouble flashing firmware to your eSpa device (either initially or during updates), see the comprehensive [Troubleshooting Flashing Issues](/firmware-building#troubleshooting-flashing-issues) section in the Firmware Building guide. This covers common issues such as:
+If you're having trouble flashing firmware to your eSpa device (either initially or during updates), see the comprehensive [Troubleshooting Platform.io Issues](/firmware-building#troubleshooting-platformio-issues) section in the Firmware Building guide. This covers common issues such as:
 
 - Device not recognized by computer
 - Failed connections and timeout errors
