@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { fetchStoreData } from './fetchStoreData'
 
 export default defineConfig({
   title: "eSpa",
@@ -23,23 +24,7 @@ export default defineConfig({
     // Additional SEO
     ['meta', { name: "robots", content: "index, follow" }],
     ['meta', { name: "author", content: "eSpa Community" }],
-    // JSON-LD Structured Data
-    ['script', { type: "application/ld+json" }, JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "eSpa - Spa Pool Home Automation Controller",
-      "description": "Open source ESP32-based spa pool controller for WiFi connectivity, MQTT integration, and Home Assistant support. Connect your spa to your smart home.",
-      "brand": { "@type": "Brand", "name": "eSpa" },
-      "url": "https://espa.diy",
-      "image": "https://espa.diy/images/logo_eSpa_02_320px.png",
-      "offers": {
-        "@type": "Offer",
-        "url": "https://store.espa.diy",
-        "availability": "https://schema.org/InStock",
-        "priceCurrency": "NZD"
-      },
-      "category": "Smart Home > Pool & Spa Automation"
-    })],
+    // JSON-LD Structured Data (Organization - static)
     ['script', { type: "application/ld+json" }, JSON.stringify({
       "@context": "https://schema.org",
       "@type": "Organization",
@@ -52,6 +37,41 @@ export default defineConfig({
       ]
     })]
   ],
+
+  async transformHead() {
+    const storeData = await fetchStoreData()
+
+    const productSchema: Record<string, any> = {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "eSpa - Spa Pool Home Automation Controller",
+      "description": "Open source ESP32-based spa pool controller for WiFi connectivity, MQTT integration, and Home Assistant support. Connect your spa to your smart home.",
+      "brand": { "@type": "Brand", "name": "eSpa" },
+      "url": "https://espa.diy",
+      "image": "https://espa.diy/images/logo_eSpa_02_320px.png",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://store.espa.diy",
+        "availability": storeData.availability,
+        "price": storeData.price,
+        "priceCurrency": storeData.priceCurrency
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": storeData.ratingValue,
+        "reviewCount": storeData.reviewCount
+      },
+      "category": "Smart Home > Pool & Spa Automation"
+    }
+
+    if (storeData.reviews.length > 0) {
+      productSchema.review = storeData.reviews
+    }
+
+    return [
+      ['script', { type: "application/ld+json" }, JSON.stringify(productSchema)]
+    ]
+  },
 
   themeConfig: {
     nav: [
