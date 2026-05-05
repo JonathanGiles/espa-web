@@ -88,7 +88,8 @@ function parseStoreData(html: string): StoreData {
 
   // Extract offers/price
   const offers = Array.isArray(product.offers) ? product.offers[0] : product.offers
-  const price = offers?.price ?? offers?.lowPrice ?? FALLBACK.price
+  const rawPrice = offers?.price ?? offers?.lowPrice ?? FALLBACK.price
+  const price = isNaN(Number(rawPrice)) ? FALLBACK.price : String(rawPrice)
   const priceCurrency = offers?.priceCurrency ?? FALLBACK.priceCurrency
   const availability = offers?.availability ?? FALLBACK.availability
 

@@ -54,7 +54,7 @@ export default defineConfig({
         "@type": "Offer",
         "url": "https://store.espa.diy",
         "availability": storeData.availability,
-        "price": storeData.price,
+        "price": Number(storeData.price),
         "priceCurrency": storeData.priceCurrency,
         "shippingDetails": [
           {
