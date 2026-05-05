@@ -55,7 +55,83 @@ export default defineConfig({
         "url": "https://store.espa.diy",
         "availability": storeData.availability,
         "price": storeData.price,
-        "priceCurrency": storeData.priceCurrency
+        "priceCurrency": storeData.priceCurrency,
+        "shippingDetails": [
+          {
+            "@type": "OfferShippingDetails",
+            "shippingDestination": {
+              "@type": "DefinedRegion",
+              "addressCountry": "NZ"
+            },
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "handlingTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 1,
+                "maxValue": 3,
+                "unitCode": "DAY"
+              },
+              "transitTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 2,
+                "maxValue": 5,
+                "unitCode": "DAY"
+              }
+            }
+          },
+          {
+            "@type": "OfferShippingDetails",
+            "shippingDestination": [
+              { "@type": "DefinedRegion", "addressCountry": "AU" },
+              { "@type": "DefinedRegion", "addressCountry": "US" },
+              { "@type": "DefinedRegion", "addressCountry": "GB" },
+              { "@type": "DefinedRegion", "addressCountry": "CA" },
+              { "@type": "DefinedRegion", "addressCountry": "DE" },
+              { "@type": "DefinedRegion", "addressCountry": "FR" },
+              { "@type": "DefinedRegion", "addressCountry": "NL" },
+              { "@type": "DefinedRegion", "addressCountry": "BE" },
+              { "@type": "DefinedRegion", "addressCountry": "IT" },
+              { "@type": "DefinedRegion", "addressCountry": "ES" },
+              { "@type": "DefinedRegion", "addressCountry": "PT" },
+              { "@type": "DefinedRegion", "addressCountry": "AT" },
+              { "@type": "DefinedRegion", "addressCountry": "CH" },
+              { "@type": "DefinedRegion", "addressCountry": "IE" },
+              { "@type": "DefinedRegion", "addressCountry": "SE" },
+              { "@type": "DefinedRegion", "addressCountry": "NO" },
+              { "@type": "DefinedRegion", "addressCountry": "DK" },
+              { "@type": "DefinedRegion", "addressCountry": "FI" },
+              { "@type": "DefinedRegion", "addressCountry": "PL" },
+              { "@type": "DefinedRegion", "addressCountry": "CZ" },
+              { "@type": "DefinedRegion", "addressCountry": "GR" },
+              { "@type": "DefinedRegion", "addressCountry": "ZA" },
+              { "@type": "DefinedRegion", "addressCountry": "SG" },
+              { "@type": "DefinedRegion", "addressCountry": "JP" }
+            ],
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "handlingTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 1,
+                "maxValue": 3,
+                "unitCode": "DAY"
+              },
+              "transitTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 21,
+                "maxValue": 42,
+                "unitCode": "DAY"
+              }
+            }
+          }
+        ],
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "NZ",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 30,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/ReturnFeesCustomerResponsibility"
+        }
       },
       "aggregateRating": {
         "@type": "AggregateRating",
