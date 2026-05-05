@@ -59,4 +59,4 @@ eSpa works by [sending and receiving messages over MQTT](/mqtt-reference). MQTT 
 
 #### MQTT for Home Assistant Users
 
-For users of Home Assistant, refer to [Home Assistant Integration](/home-automation.html#home-assistant-integration) guide.
+For users of Home Assistant, refer to [Home Assistant Integration](/home-automation#home-assistant-integration) guide.

@@ -4,6 +4,7 @@ import { fetchStoreData } from './fetchStoreData'
 export default defineConfig({
   title: "eSpa",
   description: "Open source spa pool home automation controller. Connect your spa to WiFi, control it via MQTT, and integrate with Home Assistant. Buy pre-built or DIY with ESP32.",
+  cleanUrls: true,
   sitemap: {
     hostname: 'https://espa.diy'
   },
