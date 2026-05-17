@@ -32,6 +32,10 @@ The [eSpa Mini v2](https://store.jonathangiles.net/product/espa-mini/) runs the 
 
 Note: There is no cloud service offered with eSpa or the firmware that it runs – everything is local to your home network, and you are required to set up integration with the device by integrating it with an MQTT broker running on your network.
 
+## Enclosure
+
+A 3D printable enclosure is available for the eSpa Mini. See the [enclosure page](/hardware-enclosure) for photos, printing recommendations, and download links for STL and STEP files.
+
 ## Features
 
 * Powered by an ESP32-C6-Wroom with 8MB of flash.

@@ -176,7 +176,8 @@ export default defineConfig({
             items: [
               { text: 'Overview', link: '/hardware' },
               { text: 'Building Your Own', link: '/hardware-custom-build' },
-              { text: 'Pre-Built PCBs', link: '/hardware-pcb' }
+              { text: 'Pre-Built PCBs', link: '/hardware-pcb' },
+              { text: '3D Printable Enclosure', link: '/hardware-enclosure' }
             ]
           },
           { text: 'Home Automation', link: '/home-automation' },

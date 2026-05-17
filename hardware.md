@@ -19,3 +19,5 @@ This project will not work on all spa pools. Refer to the [compatibility](/compa
 :::
 
 Because of the support for the ubiquitous ESP32 microcontroller, there are a few different ways to build your own hardware to connect to your spa pool. You can either [build your own hardware from scratch](/hardware-custom-build), or you can [buy a pre-built eSpa PCB](/hardware-pcb) to save you the trouble.
+
+Once you have your hardware, you can also download and 3D print a [custom enclosure](/hardware-enclosure) designed specifically for the pre-built eSpa PCBs.
