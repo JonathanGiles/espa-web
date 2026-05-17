@@ -1,0 +1,11 @@
+#!/bin/sh
+
+echo "Running VitePress build check..."
+npm run docs:build
+
+if [ $? -ne 0 ]; then
+  echo ""
+  echo "Build failed. Commit aborted."
+  echo "Fix the errors above before committing."
+  exit 1
+fi
