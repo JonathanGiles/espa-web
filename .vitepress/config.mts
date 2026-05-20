@@ -66,6 +66,11 @@ export default defineConfig({
               "@type": "DefinedRegion",
               "addressCountry": "NZ"
             },
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": 8.20,
+              "currency": "NZD"
+            },
             "deliveryTime": {
               "@type": "ShippingDeliveryTime",
               "handlingTime": {
@@ -84,8 +89,34 @@ export default defineConfig({
           },
           {
             "@type": "OfferShippingDetails",
+            "shippingDestination": {
+              "@type": "DefinedRegion",
+              "addressCountry": "AU"
+            },
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": 20.00,
+              "currency": "NZD"
+            },
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "handlingTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 1,
+                "maxValue": 3,
+                "unitCode": "DAY"
+              },
+              "transitTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 21,
+                "maxValue": 42,
+                "unitCode": "DAY"
+              }
+            }
+          },
+          {
+            "@type": "OfferShippingDetails",
             "shippingDestination": [
-              { "@type": "DefinedRegion", "addressCountry": "AU" },
               { "@type": "DefinedRegion", "addressCountry": "US" },
               { "@type": "DefinedRegion", "addressCountry": "GB" },
               { "@type": "DefinedRegion", "addressCountry": "CA" },
@@ -110,6 +141,11 @@ export default defineConfig({
               { "@type": "DefinedRegion", "addressCountry": "SG" },
               { "@type": "DefinedRegion", "addressCountry": "JP" }
             ],
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": 30.00,
+              "currency": "NZD"
+            },
             "deliveryTime": {
               "@type": "ShippingDeliveryTime",
               "handlingTime": {
