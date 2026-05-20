@@ -51,3 +51,5 @@ A 3D printable enclosure is available for the eSpa Mini. See the [enclosure page
 * All efforts have been made to keep the eSpa as cost-effective as possible. The eSpa is not intended to be a money-making enterprise – the goal is to get the eSpa into more hands, so that more people can integrate their spa pool into their home automation systems.
 * The eSpa is supplied as-is. Whilst it has been [tested on various spa pools](/compatibility), there is no guarantee that it will work on your spa pool. Further, there is no warranty that the eSpa will not do damage to your spa pool. You are using this at your own risk!
 * There is no guarantee that the companies producing the spa pool controllers will not change their design in the future, rendering these PCBs obsolete on new versions of the controller. We have no insight into when, or if, this will ever happen.
+
+<Reviews />

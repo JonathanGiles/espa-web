@@ -189,6 +189,20 @@ export default defineConfig({
     ]
   },
 
+  async transformPageData(pageData) {
+    const storeData = await fetchStoreData()
+    pageData.reviews = storeData.reviews.map(r => ({
+      author: r.author.name,
+      datePublished: r.datePublished,
+      ratingValue: r.reviewRating.ratingValue,
+      reviewBody: r.reviewBody
+    }))
+    pageData.reviewSummary = {
+      ratingValue: storeData.ratingValue,
+      reviewCount: storeData.reviewCount
+    }
+  },
+
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
