@@ -2,9 +2,14 @@
 import { computed } from 'vue'
 import { useData } from 'vitepress'
 
+const MAX_REVIEWS = 6
+const STORE_URL = 'https://store.espa.diy'
+
 const { page } = useData()
 
-const reviews = computed(() => page.value.reviews ?? [])
+const allReviews = computed(() => page.value.reviews ?? [])
+const displayedReviews = computed(() => allReviews.value.slice(0, MAX_REVIEWS))
+const hasMore = computed(() => allReviews.value.length > MAX_REVIEWS)
 const summary = computed(() => page.value.reviewSummary ?? { ratingValue: '5', reviewCount: '0' })
 
 const stars = (rating: string) => {
@@ -20,14 +25,14 @@ const formatDate = (dateStr?: string) => {
 </script>
 
 <template>
-  <div class="reviews-section" v-if="reviews.length > 0">
+  <div class="reviews-section" v-if="displayedReviews.length > 0">
     <h2 class="reviews-heading">Customer Reviews</h2>
     <p class="reviews-summary">
       <span class="reviews-stars">{{ stars(summary.ratingValue) }}</span>
       {{ summary.ratingValue }} out of 5 based on {{ summary.reviewCount }} reviews
     </p>
     <div class="reviews-grid">
-      <div v-for="(review, i) in reviews" :key="i" class="review-card">
+      <div v-for="(review, i) in displayedReviews" :key="i" class="review-card">
         <div class="review-header">
           <span class="review-stars">{{ stars(review.ratingValue) }}</span>
           <span class="review-date" v-if="review.datePublished">{{ formatDate(review.datePublished) }}</span>
@@ -36,6 +41,9 @@ const formatDate = (dateStr?: string) => {
         <p class="review-author">— {{ review.author }}</p>
       </div>
     </div>
+    <p class="reviews-see-all" v-if="hasMore">
+      <a :href="STORE_URL" target="_blank" rel="noopener">See all {{ summary.reviewCount }} reviews →</a>
+    </p>
   </div>
 </template>
 
@@ -98,5 +106,20 @@ const formatDate = (dateStr?: string) => {
   font-size: 0.9rem;
   font-weight: 500;
   color: var(--vp-c-text-2);
+}
+
+.reviews-see-all {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.reviews-see-all a {
+  color: var(--vp-c-brand-1);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.reviews-see-all a:hover {
+  text-decoration: underline;
 }
 </style>

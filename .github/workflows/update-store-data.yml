@@ -1,0 +1,99 @@
+name: Update Store Data
+
+on:
+  schedule:
+    - cron: '0 3 * * *' # Daily at 3am UTC
+  workflow_dispatch: # Allow manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  update-store-data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch store data
+        run: |
+          python3 << 'EOF'
+          import json, re, sys, urllib.request
+
+          PRODUCT_URL = "https://store.jonathangiles.net/product/espa-mini/"
+          OUTPUT_FILE = ".vitepress/store-data.json"
+
+          req = urllib.request.Request(PRODUCT_URL, headers={"User-Agent": "eSpa-Build/1.0"})
+          try:
+              with urllib.request.urlopen(req, timeout=30) as resp:
+                  html = resp.read().decode("utf-8")
+          except Exception as e:
+              print(f"Failed to fetch store page: {e}")
+              sys.exit(0)  # Don't fail the workflow
+
+          # Extract JSON-LD
+          blocks = []
+          for match in re.finditer(r'<script[^>]*type=["\']application/ld\+json["\'][^>]*>(.*?)</script>', html, re.DOTALL):
+              try:
+                  data = json.loads(match.group(1))
+                  if data.get("@graph"):
+                      blocks.extend(data["@graph"])
+                  else:
+                      blocks.append(data)
+              except json.JSONDecodeError:
+                  pass
+
+          product = next((b for b in blocks if b.get("@type") == "Product"), None)
+          if not product:
+              print("No Product JSON-LD found")
+              sys.exit(0)
+
+          # Extract data
+          offers = product.get("offers", {})
+          if isinstance(offers, list):
+              offers = offers[0]
+
+          agg = product.get("aggregateRating", {})
+          raw_reviews = product.get("review", product.get("reviews", []))
+          if not isinstance(raw_reviews, list):
+              raw_reviews = [raw_reviews]
+
+          reviews = []
+          for r in raw_reviews:
+              if not r:
+                  continue
+              author = r.get("author", {})
+              author_name = author.get("name", "Anonymous") if isinstance(author, dict) else str(author)
+              reviews.append({
+                  "author": author_name,
+                  "datePublished": r.get("datePublished"),
+                  "ratingValue": str(r.get("reviewRating", {}).get("ratingValue", "5")),
+                  "reviewBody": r.get("reviewBody")
+              })
+
+          output = {
+              "price": str(offers.get("price", offers.get("lowPrice", "69.00"))),
+              "priceCurrency": offers.get("priceCurrency", "NZD"),
+              "availability": offers.get("availability", "https://schema.org/InStock"),
+              "ratingValue": str(agg.get("ratingValue", "5")),
+              "reviewCount": str(agg.get("reviewCount", agg.get("ratingCount", "0"))),
+              "reviews": reviews
+          }
+
+          with open(OUTPUT_FILE, "w") as f:
+              json.dump(output, f, indent=2)
+              f.write("\n")
+
+          print(f"Updated {OUTPUT_FILE} with {len(reviews)} reviews")
+          EOF
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .vitepress/store-data.json
+          if git diff --staged --quiet; then
+            echo "No changes to store data"
+          else
+            git commit -m "chore: update store data (automated)"
+            git push
+          fi

@@ -1,0 +1,33 @@
+{
+  "price": "69.00",
+  "priceCurrency": "NZD",
+  "availability": "https://schema.org/InStock",
+  "ratingValue": "5.00",
+  "reviewCount": "4",
+  "reviews": [
+    {
+      "author": "Eli",
+      "datePublished": "2025-02-23T08:38:12+13:00",
+      "ratingValue": "5",
+      "reviewBody": "Amazing little board that easily plugs into the spa and links it to my Home Assistant setup. It's very reliable and gives you full access to every little feature in the spa. I got it so that I can automatically control the spa according to solar power production.\r\n\r\nJonathan was great to speak with when sorting out some shipping details and answering questions. My controller was untested by the team, but when I got it, they helped integrate my spa controller model very quickly (Thanks Lucas!).\r\n\r\nOverall, It's a great product that can help you remotely control and automate your spa for cheap."
+    },
+    {
+      "author": "Pete C",
+      "datePublished": "2025-02-23T08:38:11+13:00",
+      "ratingValue": "5",
+      "reviewBody": "Absolutely brilliant little PCB! Super compact and beautifully designed. \r\n\r\nBought one for my Rotaspa and it was literally plug and play, instantly being detected in Home Assistant (thanks to coming pre-flashed with the firmware). \r\n\r\nIt\u2019s also significantly cheaper than the first-party add-on module and, being built as an open-source project, it means you have access to a great network of knowledgeable folks to help or chat with if you run into any problems. \r\n\r\nAs someone suggested on Discord: \u201cIt\u2019s so good, I\u2019ll be fighting to keep the hot tub in the divorce!\u201d"
+    },
+    {
+      "author": "Luke",
+      "datePublished": "2024-11-04T13:57:28+13:00",
+      "ratingValue": "5",
+      "reviewBody": "Awesome little controller. Works well to control most Spas with a SpaNet controller when used with this firmware: https://github.com/wayne-love/sn_esp32.\r\n\r\nWith this, you have limited control with a simple web interface on your LAN. Or virtually full control of the spa via Home Assistant or OpenHab with an mqtt broker installed. \r\n\r\nAll this to say, there are some bits to set this up, but if you're a homelabber or already Home Assistant and OpenHab setup, then it is should be straightforward."
+    },
+    {
+      "author": "Tommy",
+      "datePublished": "2024-11-04T08:18:50+13:00",
+      "ratingValue": "5",
+      "reviewBody": "Very nice and tidy PCB, 100 times better than I could have made myself for sure!\r\nSupported by the \"SpaNet MQTT ESP32 bridge\" firmware which means I can now control my spa with Home Assistant.\r\nI very much like the \"plug n play\" by just using a standard ethernet patch cable too!"
+    }
+  ]
+}
