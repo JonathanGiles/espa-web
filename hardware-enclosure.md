@@ -150,10 +150,10 @@ The following files are available for download. Choose the case file that matche
 
 | File | Description |
 |------|-------------|
-| [espa-case-mini-v1.stl](/downloads/espa-case-mini-v1.stl) | Case for eSpa Mini v1 (STL) |
-| [espa-case-mini-v2.stl](/downloads/espa-case-mini-v2.stl) | Case for eSpa Mini v2 (STL) |
-| [espa-lid.stl](/downloads/espa-lid.stl) | Lid (fits both v1 and v2) (STL) |
-| [espa-case-all.step](/downloads/espa-case-all.step) | Complete enclosure assembly (STEP) |
+| <a href="/downloads/espa-case-mini-v1.stl" download>espa-case-mini-v1.stl</a> | Case for eSpa Mini v1 (STL) |
+| <a href="/downloads/espa-case-mini-v2.stl" download>espa-case-mini-v2.stl</a> | Case for eSpa Mini v2 (STL) |
+| <a href="/downloads/espa-lid.stl" download>espa-lid.stl</a> | Lid (fits both v1 and v2) (STL) |
+| <a href="/downloads/espa-case-all.step" download>espa-case-all.step</a> | Complete enclosure assembly (STEP) |
 
 ::: tip
 STL files are ready for slicing and printing. The STEP file contains the full assembly and can be opened in CAD software if you wish to modify the design.
