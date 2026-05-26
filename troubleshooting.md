@@ -16,11 +16,11 @@ If you are having trouble with your eSpa, there are a few steps you can take to 
 
 ## Run the Latest Version
 
-The first thing you need to do whenever you run into a problem is ensure you are running the latest version of the software. The eSpa software is updated regularly to fix bugs and add new features, and will automatically update on its own, if configured to do so. To update your eSpa, follow the instructions in the [Updating the Software](/firmware-espyspa-updating) guide.
+The first thing you need to do whenever you run into a problem is ensure you are running the latest version of the software. The eSpa software is updated regularly to fix bugs and add new features, and will automatically update on its own, if configured to do so. To update your eSpa, follow the instructions in the [Updating the Software](/firmware-updating) guide.
 
 ## Firmware Flashing Issues
 
-If you're having trouble flashing firmware to your eSpa device (either initially or during updates), see the comprehensive [Troubleshooting Platform.io Issues](/firmware-espyspa-building#troubleshooting-platformio-issues) section in the Firmware Building guide. This covers common issues such as:
+If you're having trouble flashing firmware to your eSpa device (either initially or during updates), see the comprehensive [Troubleshooting Platform.io Issues](/firmware-building#troubleshooting-platformio-issues) section in the Firmware Building guide. This covers common issues such as:
 
 - Device not recognized by computer
 - Failed connections and timeout errors

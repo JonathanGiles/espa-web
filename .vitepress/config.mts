@@ -221,11 +221,8 @@ export default defineConfig({
           { text: 'Firmware',
             items: [
               { text: 'Overview', link: '/firmware' },
-              { text: 'ESPySpa', link: '/firmware-espyspa' },
-              { text: 'Building ESPySpa', link: '/firmware-espyspa-building' },
-              { text: 'Updating ESPySpa', link: '/firmware-espyspa-updating' },
-              { text: 'ESPHome', link: '/firmware-esphome' },
-              { text: 'Comparison', link: '/firmware-comparison' }
+              { text: 'Building', link: '/firmware-building' },
+              { text: 'Updating', link: '/firmware-updating' }
             ]
           },
           { text: 'Hardware', 

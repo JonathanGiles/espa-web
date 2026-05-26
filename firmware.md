@@ -1,35 +1,24 @@
 ---
-title: eSpa Firmware - Choose Your Firmware
-description: Two open source firmware options are available for eSpa spa pool controllers. Compare ESPySpa and ESPHome-based firmware to find the best fit for your setup.
+title: eSpa Firmware - Features & Overview
+description: eSpa firmware for ESP32 provides WiFi connectivity, MQTT support, web interface, OTA updates, and temperature control for your spa pool home automation.
 head:
   - - meta
     - property: og:title
-      content: eSpa Firmware - Choose Your Firmware
+      content: eSpa Firmware - Features & Overview
   - - meta
     - property: og:description
-      content: Two open source firmware options are available for eSpa spa pool controllers. Compare ESPySpa and ESPHome-based firmware to find the best fit for your setup.
+      content: eSpa firmware for ESP32 provides WiFi connectivity, MQTT support, web interface, OTA updates, and temperature control for your spa pool home automation.
 ---
 
 # Firmware
 
-There are two open source firmware options available for eSpa hardware. Both provide full spa pool control, temperature management, and home automation integration — they differ in their approach and ecosystem.
+The eSpa firmware is designed to be easy to use, and to provide a lot of features to integrate your spa pool into your home automation. Some of the features include:
 
-## ESPySpa
-
-The original eSpa firmware, built on Arduino/PlatformIO. It provides a standalone web interface for control and configuration, and integrates with home automation systems via MQTT.
-
-**Best for:** Users who want a full standalone web UI, MQTT-based integration, or are using generic/DIY ESP32 boards.
-
-→ [Learn more about ESPySpa](/firmware-espyspa)
-
-## ESPHome
-
-An alternative firmware built as a custom [ESPHome](https://esphome.io/) component. It provides native Home Assistant integration with automatic device discovery and YAML-based configuration.
-
-**Best for:** Home Assistant users who want seamless native integration, energy monitoring, and a declarative YAML configuration.
-
-→ [Learn more about ESPHome firmware](/firmware-esphome)
-
-## Not Sure Which to Choose?
-
-Check out the [side-by-side comparison](/firmware-comparison) to see how the two options stack up across features, integration, and setup experience.
+- **Temperature control**: The firmware can control the spa pool temperature, and can turn the heater on and off to maintain the temperature setpoint.
+- **MQTT support**: The firmware can publish status information to an MQTT server, allowing you to integrate your spa pool into your home automation system.
+- **Web interface**: The firmware provides a web interface that allows you to configure the spa pool settings, such as the temperature setpoint, and many other settings.
+- **Easy configuration**: The firmware starts in access point mode, allowing you to connect to the ESP32 and configure it to connect to your home network.
+- **OTA updates**: The firmware supports over-the-air updates, allowing you to update the firmware without needing to connect the ESP32 to your computer.
+- **Debugging**: The firmware provides a lot of debug information, allowing you to see what the ESP32 is doing, and to diagnose any issues.
+- **Customizable**: The firmware is open source, and is designed to be easy to modify and extend (and contribute back to the project!).
+- **And more!**: The firmware is under active development, and new features are being added all the time.
