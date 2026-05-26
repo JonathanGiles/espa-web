@@ -13,7 +13,7 @@ head:
 # Building Firmware from Source
 
 ::: info For Developers
-This page is for developers who want to build eSpa firmware from source, customize the code, or contribute to the project. **If you just want to update your eSpa device to the latest version, see the [Firmware Updating](/firmware-updating) guide instead.**
+This page is for developers who want to build eSpa firmware from source, customize the code, or contribute to the project. **If you just want to update your eSpa device to the latest version, see the [Firmware Updating](/firmware-espyspa-updating) guide instead.**
 :::
 
 The eSpa firmware is open source and available on [GitHub](https://github.com/wayne-love/ESPySpa). It's built using [Platform.io](https://platformio.org/), a powerful development environment for embedded systems that makes building and flashing firmware straightforward.

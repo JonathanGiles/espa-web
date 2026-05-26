@@ -13,7 +13,7 @@ head:
 # Updating the Firmware
 
 ::: info For End Users
-This page is for eSpa users who want to update their device to the latest firmware. **If you're a developer wanting to build firmware from source or customize the code, see the [Firmware Building](/firmware-building) guide instead.**
+This page is for eSpa users who want to update their device to the latest firmware. **If you're a developer wanting to build firmware from source or customize the code, see the [Firmware Building](/firmware-espyspa-building) guide instead.**
 :::
 
 Keeping your eSpa firmware up to date ensures you have the latest features, bug fixes, and compatibility improvements. There are several ways to update your eSpa firmware, depending on whether your device is already connected to your network or needs to be connected via USB.
@@ -131,11 +131,11 @@ If you encounter issues while flashing via USB:
 - **Device not detected**: Try a different USB cable or port. Install CH340 or CP2102 drivers if needed.
 - **Connection fails**: Hold the BOOT button on your device while clicking "Connect"
 - **Process times out**: Try a different browser or restart your computer
-- **For detailed troubleshooting**: See the [Flashing Issues](/firmware-building#troubleshooting-flashing-issues) guide
+- **For detailed troubleshooting**: See the [Flashing Issues](/firmware-espyspa-building#troubleshooting-flashing-issues) guide
 
 ## Building from Source (Advanced)
 
-If you need to build custom firmware or test pre-release development versions, see the [Firmware Building](/firmware-building) guide for instructions on setting up Platform.io and building from source.
+If you need to build custom firmware or test pre-release development versions, see the [Firmware Building](/firmware-espyspa-building) guide for instructions on setting up Platform.io and building from source.
 
 ## Checking Your Current Version
 
