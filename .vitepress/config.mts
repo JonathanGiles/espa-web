@@ -221,8 +221,15 @@ export default defineConfig({
           { text: 'Firmware',
             items: [
               { text: 'Overview', link: '/firmware' },
-              { text: 'Building', link: '/firmware-building' },
-              { text: 'Updating', link: '/firmware-updating' }
+              { text: 'ESPySpa',
+                collapsed: false,
+                items: [
+                  { text: 'Overview', link: '/firmware-espyspa' },
+                  { text: 'Building from Source', link: '/firmware-espyspa-building' },
+                  { text: 'Updating', link: '/firmware-espyspa-updating' }
+                ]
+              },
+              { text: 'ESPHome', link: '/firmware-esphome' }
             ]
           },
           { text: 'Hardware', 
@@ -242,7 +249,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/wayne-love/espyspa' },
+      { icon: 'github', link: '/github' },
       { icon: 'discord', link: 'https://discord.gg/faK8Ag4wHn' }
     ],
 

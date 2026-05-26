@@ -27,7 +27,7 @@ The easiest way to flash or update your eSpa firmware is using our web-based fla
 3. Follow the on-screen instructions to flash the firmware
 4. Once complete, disconnect the USB cable and proceed with connecting to your spa
 
-For detailed instructions, troubleshooting, or alternative flashing methods, see the [Firmware Building and Flashing](/firmware-building) guide.
+For detailed instructions, troubleshooting, or alternative flashing methods, see the [Firmware Building and Flashing](/firmware-espyspa-building) guide.
 
 ## Connecting to your spa pool controller
 
