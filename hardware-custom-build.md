@@ -37,7 +37,7 @@ On spa pools containing SpaNet SV and SV Mini controllers, there exists a port l
 
 Because the spa is outputting 12V over this connection, we can build our controller with no need for an external power connection - all we need to do is convert the 12V down to a 3.3V voltage suitable for our ESP32 chip. We then use pins 5/6 to communicate with the controller, using our [custom firmware](/firmware).
 
-## Micronocontroller Selection
+## Microcontroller Selection
 Our pre-built PCBs use either the ESP32-S3 (v1) or the ESP32-C6 (v2). A minimum of 8 MB of flash memory is required to ensure compatibility with our firmware.
 
 Flash size is often indicated in the part number as -N8 (8 MB) or -N16 (16 MB). For example, our v2 board uses an ESP32-C6-N8 microcontroller.
