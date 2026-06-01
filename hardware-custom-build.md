@@ -37,13 +37,21 @@ On spa pools containing SpaNet SV and SV Mini controllers, there exists a port l
 
 Because the spa is outputting 12V over this connection, we can build our controller with no need for an external power connection - all we need to do is convert the 12V down to a 3.3V voltage suitable for our ESP32 chip. We then use pins 5/6 to communicate with the controller, using our [custom firmware](/firmware).
 
+## Micronocontroller Selection
+Our pre-built PCBs use either the ESP32-S3 (v1) or the ESP32-C6 (v2). A minimum of 8 MB of flash memory is required to ensure compatibility with our firmware.
+
+Flash size is often indicated in the part number as -N8 (8 MB) or -N16 (16 MB). For example, our v2 board uses an ESP32-C6-N8 microcontroller.
+
+If you would like to use the pre-compiled firmware, you must use either an ESP32-S3 or ESP32-C6 with at least 8 MB of flash memory.
+If you would like to use a different ESP32 variant, you will need to compile the firmware yourself using PlatformIO. See [Building Firmware from Source](https://espa.diy/firmware-espyspa-building) for instructions.
+
 ## Components
 
 The table below lists a few options for purchasing the required components. [AliExpress](https://aliexpress.com) is typically cheaper but has a much slower delivery, compared with the more expensive [Core Electronics](https://core-electronics.com.au/) (based in Australia), with their faster delivery times.
 
 | Component        | Store links | Comments |
 |------------------|-------------|----------|
-| ESP32            | [AliExpress](https://www.aliexpress.com/item/1005001929935550.html?spm=a2g0o.order_list.0.0.74be1802hFqod2) / [Core](https://core-electronics.com.au/firebeetle-esp32-e-iot-microcontroller-with-header-supports-wi-fi-bluetooth.html) | Get 1 already-wielded ESP32. |
+| ESP32-C6-N8      | [AliExpress](https://www.aliexpress.com/item/1005006708097629.html) / [Core](https://core-electronics.com.au/esp32-c6-devkitc-1-n8-development-board-8-mb-spi-flash.html) |  |
 | RJ45 connector   | [AliExpress](https://www.aliexpress.com/item/1005003717285471.html?spm=a2g0o.order_list.0.0.74be1802hFqod2) / [Core](https://core-electronics.com.au/sparkfun-rj45-magjack-breakout.html) | Get a 'H Type+DIP Pins'. |
 | Buck converter   | [AliExpress](https://www.aliexpress.com/item/1005002603013499.html?spm=a2g0o.order_list.0.0.74be1802hFqod2) / [Core](https://core-electronics.com.au/sparkfun-babybuck-regulator-breakout-3-3v-ap63203.html) | Get a '5-40V to 3.3V' converter. |
 | 330 ohm Resistor | [AliExpress](https://www.aliexpress.com/item/32952657927.html?spm=a2g0o.order_list.0.0.74be1802hFqod2) / [Core](https://core-electronics.com.au/resistor-330-ohm-1-6th-watt-pth.html) | You need two 330 ohm resistors. |
