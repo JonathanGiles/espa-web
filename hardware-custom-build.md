@@ -40,7 +40,7 @@ Because the spa is outputting 12V over this connection, we can build our control
 ## Microcontroller Selection
 Our pre-built PCBs use either the ESP32-S3 (v1) or the ESP32-C6 (v2). A minimum of 8 MB of flash memory is required to ensure compatibility with our firmware.
 
-Flash size is often indicated in the part number as -N8 (8 MB) or -N16 (16 MB). For example, our v2 board uses an ESP32-C6-N8 microcontroller.
+Flash size is often indicated in the part number as -N8 (8 MB) or -N16 (16 MB). For example, our v2 board uses an ESP32-C6-WROOM-1-N8 microcontroller.
 
 If you would like to use the pre-compiled firmware, you must use either an ESP32-S3 or ESP32-C6 with at least 8 MB of flash memory.
 If you would like to use a different ESP32 variant, you will need to compile the firmware yourself using PlatformIO. See [Building Firmware from Source](https://espa.diy/firmware-espyspa-building) for instructions.
