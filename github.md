@@ -28,7 +28,7 @@ The ESPHome-based alternative firmware. A custom ESPHome component that provides
 
 ### [JonathanGiles/espa-web](https://github.com/JonathanGiles/espa-web)
 
-The source for this website ([espa.diy](https://espa.diy)). Built with VitePress. Contributions to documentation, guides, and content are always welcome. This repository also contains the 3D printable enclosure STL/STEP files.
+The source for this website ([espa.diy](https://espa.diy)). Built with VitePress. Contributions to documentation, guides, and content are always welcome. This repository also contains the 3D printable enclosure STL files.
 
 ## Contributing
 

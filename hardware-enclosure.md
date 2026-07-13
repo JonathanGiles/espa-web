@@ -1,13 +1,13 @@
 ---
 title: eSpa 3D Printable Enclosure - Protect Your Spa Controller
-description: Download free 3D printable enclosure files for the eSpa Mini v1 and v2 spa pool controllers. STL and STEP files available for easy printing.
+description: Download free 3D printable enclosure files for the eSpa Mini v1 and v2 spa pool controllers. STL files available for easy printing.
 head:
   - - meta
     - property: og:title
       content: eSpa 3D Printable Enclosure - Protect Your Spa Controller
   - - meta
     - property: og:description
-      content: Download free 3D printable enclosure files for the eSpa Mini v1 and v2 spa pool controllers. STL and STEP files available for easy printing.
+      content: Download free 3D printable enclosure files for the eSpa Mini v1 and v2 spa pool controllers. STL files available for easy printing.
 ---
 
 # 3D Printable Enclosure
@@ -151,12 +151,11 @@ The following files are available for download. Choose the case file that matche
 | File | Description |
 |------|-------------|
 | <a href="/downloads/espa-case-mini-v1.stl" download>espa-case-mini-v1.stl</a> | Case for eSpa Mini v1 (STL) |
-| <a href="/downloads/espa-case-mini-v2.stl" download>espa-case-mini-v2.stl</a> | Case for eSpa Mini v2 (STL) |
-| <a href="/downloads/espa-lid.stl" download>espa-lid.stl</a> | Lid (fits both v1 and v2) (STL) |
-| <a href="/downloads/espa-case-all.step" download>espa-case-all.step</a> | Complete enclosure assembly (STEP) |
+| <a href="/downloads/espa-case-mini-v2-rev1.2.stl" download>espa-case-mini-v2-rev1.2.stl</a> | Case for eSpa Mini v2 (STL) |
+| <a href="/downloads/espa-lid-rev1.1.stl" download>espa-lid-rev1.1.stl</a> | Lid (fits both v1 and v2) (STL) |
 
 ::: tip
-STL files are ready for slicing and printing. The STEP file contains the full assembly and can be opened in CAD software if you wish to modify the design.
+STL files are ready for slicing and printing.
 :::
 
 ## Printing Recommendations
@@ -168,5 +167,11 @@ STL files are ready for slicing and printing. The STEP file contains the full as
 
 ## Assembly
 
-* **Lid:** 2mm bolts or screws (12–20mm length) thread tightly into the lid holes (which measure approximately 1.9mm). M2 countersunk screws at 10mm length also work well for holding the lid on.
-* **PCB mounting:** Use 4mm screws to secure the PCB to the standoffs inside the case.
+Two types of screw are used, one for the lid and one for the PCB:
+
+* **Lid:** **M2 countersunk screws, 10mm length.** These thread tightly into the lid holes (which measure approximately 1.9mm) and hold the lid securely closed.
+* **PCB mounting:** **M2 pan head screws, 5mm length.** These secure the PCB to the standoff inside the case.
+
+::: warning PCB screw: use pan head, not countersunk
+For the PCB, use a **pan head** screw and do **not** exceed **5mm** length. A pan head bottoms out flat on top of the PCB, so it can't pull in any deeper. A countersunk head keeps wedging in as you tighten, and a longer screw can drive straight through the thin floor and out the bottom of the case.
+:::

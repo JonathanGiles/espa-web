@@ -34,7 +34,7 @@ Note: There is no cloud service offered with eSpa or the firmware that it runs â
 
 ## Enclosure
 
-A 3D printable enclosure is available for the eSpa Mini. See the [enclosure page](/hardware-enclosure) for photos, printing recommendations, and download links for STL and STEP files.
+A 3D printable enclosure is available for the eSpa Mini. See the [enclosure page](/hardware-enclosure) for photos, printing recommendations, and download links for STL files.
 
 ## Features
 
