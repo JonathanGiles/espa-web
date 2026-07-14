@@ -151,8 +151,8 @@ The following files are available for download. Choose the case file that matche
 | File | Description |
 |------|-------------|
 | <a href="/downloads/espa-case-mini-v1.stl" download>espa-case-mini-v1.stl</a> | Case for eSpa Mini v1 (STL) |
-| <a href="/downloads/espa-case-mini-v2-rev1.2.stl" download>espa-case-mini-v2-rev1.2.stl</a> | Case for eSpa Mini v2 (STL) |
-| <a href="/downloads/espa-lid-rev1.1.stl" download>espa-lid-rev1.1.stl</a> | Lid (fits both v1 and v2) (STL) |
+| <a href="/downloads/espa-case-mini-v2-rev1.9.stl" download>espa-case-mini-v2-rev1.9.stl</a> | Case for eSpa Mini v2 (STL) |
+| <a href="/downloads/espa-lid-rev1.6.stl" download>espa-lid-rev1.6.stl</a> | Lid (fits both v1 and v2) (STL) |
 
 ::: tip
 STL files are ready for slicing and printing.
@@ -175,3 +175,9 @@ Two types of screw are used, one for the lid and one for the PCB:
 ::: warning PCB screw: use pan head, not countersunk
 For the PCB, use a **pan head** screw and do **not** exceed **5mm** length. A pan head bottoms out flat on top of the PCB, so it can't pull in any deeper. A countersunk head keeps wedging in as you tighten, and a longer screw can drive straight through the thin floor and out the bottom of the case.
 :::
+
+## Wall Mounting
+
+The case has three external mounting bosses (two on one long side, one on the opposite side) with ⌀3.7mm clearance holes for fixing the enclosure to a wall or backboard.
+
+* **Wall screws:** **#6 (⌀3.5mm) × 16mm pan-head wood screws.** The ⌀3.7mm holes are clearance holes, so the screw passes through the boss and threads directly into the wall or timber behind it. A pan head sits flush against the top of the boss and clamps the case down securely.
