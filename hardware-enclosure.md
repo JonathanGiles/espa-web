@@ -1,20 +1,20 @@
 ---
 title: eSpa 3D Printable Enclosure - Protect Your Spa Controller
-description: Download free 3D printable enclosure files for the eSpa Mini v1 and v2 spa pool controllers. STL files available for easy printing.
+description: Download free 3D printable enclosure files for the eSpa Mini v2 spa pool controller. STL files available for easy printing.
 head:
   - - meta
     - property: og:title
       content: eSpa 3D Printable Enclosure - Protect Your Spa Controller
   - - meta
     - property: og:description
-      content: Download free 3D printable enclosure files for the eSpa Mini v1 and v2 spa pool controllers. STL files available for easy printing.
+      content: Download free 3D printable enclosure files for the eSpa Mini v2 spa pool controller. STL files available for easy printing.
 ---
 
 # 3D Printable Enclosure
 
 A custom 3D printable enclosure is available for the eSpa Mini, designed to protect your PCB and provide a clean, finished look when installed in your spa pool cabinet.
 
-There are separate enclosure files for the eSpa Mini v1 and eSpa Mini v2, as well as a shared lid that fits both versions.
+The enclosure comes in two variants that are identical apart from length: a **long** version (recommended) and a slightly more **compact short** version. Both share the same water-resistant drip-lip lid, two-point wall mounting, and eSpa.diy mark.
 
 ## Photos
 
@@ -146,16 +146,17 @@ if (typeof window !== 'undefined') {
 
 ## Downloads
 
-The following files are available for download. Choose the case file that matches your eSpa Mini version, and download the lid which is shared between both versions.
+The following files are available for download. Each variant needs its **case and its matching lid** — long lids fit long cases, and short lids fit short cases. Most people should choose the **long (recommended)** version.
 
 | File | Description |
 |------|-------------|
-| <a href="/downloads/espa-case-mini-v1.stl" download>espa-case-mini-v1.stl</a> | Case for eSpa Mini v1 (STL) |
-| <a href="/downloads/espa-case-mini-v2-rev1.9.stl" download>espa-case-mini-v2-rev1.9.stl</a> | Case for eSpa Mini v2 (STL) |
-| <a href="/downloads/espa-lid-rev1.6.stl" download>espa-lid-rev1.6.stl</a> | Lid (fits both v1 and v2) (STL) |
+| <a href="/downloads/espa-case-long.stl" download>espa-case-long.stl</a> | **Case — long (recommended).** Full-length body, with extra clearance at the connector end so the RJ45 plug sits fully inside the case. |
+| <a href="/downloads/espa-lid-long.stl" download>espa-lid-long.stl</a> | **Lid — long (recommended).** Matches the long case. |
+| <a href="/downloads/espa-case-short.stl" download>espa-case-short.stl</a> | **Case — short.** A more compact build, 15&nbsp;mm shorter than the recommended version. |
+| <a href="/downloads/espa-lid-short.stl" download>espa-lid-short.stl</a> | **Lid — short.** Matches the short case. |
 
-::: tip
-STL files are ready for slicing and printing.
+::: tip Which one should I print?
+Go with the **long (recommended)** version. The **short** variant only saves a small amount of resin and print time, and its tighter connector end leaves less room for the RJ45 plug — choose it only if you specifically want the most compact enclosure.
 :::
 
 ## Printing Recommendations
@@ -178,6 +179,6 @@ For the PCB, use a **pan head** screw and do **not** exceed **5mm** length. A pa
 
 ## Wall Mounting
 
-The case has three external mounting bosses (two on one long side, one on the opposite side) with ⌀3.7mm clearance holes for fixing the enclosure to a wall or backboard.
+The case has two external mounting bosses (one at each end) with ⌀3.7mm clearance holes for fixing the enclosure to a wall or backboard.
 
 * **Wall screws:** **#6 (⌀3.5mm) × 16mm pan-head wood screws.** The ⌀3.7mm holes are clearance holes, so the screw passes through the boss and threads directly into the wall or timber behind it. A pan head sits flush against the top of the boss and clamps the case down securely.
